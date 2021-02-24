@@ -1,30 +1,32 @@
 # LINK: https://leetcode.com/problems/product-of-array-except-self/
 
+## Make sure to use double space and not tab! ##
+
 from functools import reduce
-# from operator import mul
+from operator import mul
 
 class Solution(object):
-    def productExceptSelf(self, nums):
-        answer = []
+  def productExceptSelf(self, nums):
 
-        if len(nums) < 2:
-        	return nums
+    # Define left, right lists
+    left=[0]*len(nums)
+    left[0]=1
+    right = [0]*len(nums)
+    right[len(nums)-1]=1
 
-        for i in range(0, len(nums)):
+    total=0
 
-        	# Delete value
-        	popped = nums.pop(i)
+    # Compute left array
+    # Compute right array
+    for i in range(1, len(nums)):
+      left[i]=left[i-1]*nums[i-1]
+      right[len(nums)-i-1]=right[len(nums)-i]*nums[len(nums)-i]
 
-        	# Get product
-        	prod = reduce(mul, nums)
+    # Compute final answer
+    for i in range(len(left)):
+      left[i]=left[i]*right[i]
 
-        	# Insert to new list
-        	answer.append(prod)
-
-        	# re-insert value
-        	nums.insert(i, popped)
-
-        return answer;
+    return left
 
 foo = Solution();
 print(foo.productExceptSelf([1,2,3,4]));
