@@ -28,7 +28,7 @@ class Solution(object):
       while len(answer[0]) == i:
         current = answer.pop(0)
 
-        # 
+        # Append the letters from the new digit
         for letter in digitsMap[int(digit)]:
           answer.append(current+letter)
 
