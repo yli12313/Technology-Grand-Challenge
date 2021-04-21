@@ -1,3 +1,5 @@
+# LINK: https://leetcode.com/problems/implement-strstr/
+
 class Solution(object):
   def strStr(self, haystack, needle):
     if len(needle) == 0:
