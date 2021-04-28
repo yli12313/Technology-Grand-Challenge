@@ -1,3 +1,5 @@
+# LINK: https://leetcode.com/problems/length-of-last-word/
+
 class Solution(object):
   def lengthOfLastWord(self, s):
     if s == ' ':
