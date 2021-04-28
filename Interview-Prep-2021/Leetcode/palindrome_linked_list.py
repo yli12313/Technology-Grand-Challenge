@@ -1,6 +1,7 @@
 # LINK: https://leetcode.com/problems/palindrome-linked-list/
 
-# FYI: sorting is very important with anagrams and palindromes!
+## FYI: sorting is very important with anagrams and palindromes! ##
+## FYI: Make sure to record the link to the problem before starting leetcode! ##
 
 class ListNode(object):
     def __init__(self, val=0, next=None):
