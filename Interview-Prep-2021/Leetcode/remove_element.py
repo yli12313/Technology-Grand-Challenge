@@ -1,3 +1,5 @@
+# LINK: https://leetcode.com/problems/remove-element/
+
 class Solution(object):
   def removeElement(self, nums, val):
     if len(nums) == 1 and val == nums[0]:

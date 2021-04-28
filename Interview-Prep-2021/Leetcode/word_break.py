@@ -1,3 +1,5 @@
+# LINK: https://leetcode.com/problems/word-break/
+
 class Solution(object):
   def wordBreak(self, s, wordDict):
     ## Dynamic Programming ##
