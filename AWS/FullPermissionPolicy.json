@@ -1,0 +1,14 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "AllObjectActions",
+			"Effect": "Allow",
+			"Action": "s3:*Object",
+			"Resource": [
+				"arn:aws:s3:::tobucket05yl/*",
+				"arn:aws:s3:::frombucket05yl/*"
+			]
+		}
+	]
+}
