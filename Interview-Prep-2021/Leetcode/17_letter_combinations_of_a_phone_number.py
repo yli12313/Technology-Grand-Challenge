@@ -1,4 +1,4 @@
-# LINK: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+# Link: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 
 ## Make sure to use double space and not tab! ##
 
