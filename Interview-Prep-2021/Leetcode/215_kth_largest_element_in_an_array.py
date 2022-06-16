@@ -1,5 +1,6 @@
 # Link: https://leetcode.com/problems/kth-largest-element-in-an-array/
 
+# Solution 1
 class Solution(object):
   def findKthLargest(self, nums, k):
     if nums is None:
@@ -10,3 +11,13 @@ class Solution(object):
     nums = sorted(nums)
     
     return nums[len(nums)-k]
+  
+  # Solution 2
+  def findKthLargest_Solution2(self, nums, k):
+    number = len(nums) - k
+    heapify(nums)
+
+    for i in range(number):
+      heappop(nums)
+        
+    return heappop(nums)
