@@ -15,6 +15,8 @@ class Solution(object):
   # Solution 2
   def findKthLargest_Solution2(self, nums, k):
     number = len(nums) - k
+    
+    # Heapify gives you a min heap!
     heapify(nums)
 
     for i in range(number):
