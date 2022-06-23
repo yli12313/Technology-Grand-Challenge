@@ -28,6 +28,8 @@ class Solution(object):
         else:
           # If you encounter ')' and the stack is not empty, then calculate the length
           # and compare it to max. If it's bigger than max, then update the max value.
+          # This part is genius! You need to pop off the index of '(' before calculating
+          # the index!
           length = i-stk[len(stk)-1]
           mx = max(mx, length)
     
