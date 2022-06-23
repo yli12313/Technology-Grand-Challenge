@@ -20,7 +20,7 @@ class Solution(object):
     # 1st largest: 3-1 = 2. The 2nd in the array above is the value: 3.
     return nums[len(nums)-k]
   
-  # Solution 2
+  ## Solution 2 ##
   def findKthLargest_Solution2(self, nums, k):
     
     # Get the index of the kth-largest value.
