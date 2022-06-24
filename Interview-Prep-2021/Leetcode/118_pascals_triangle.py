@@ -1,4 +1,5 @@
 # Link: https://leetcode.com/problems/pascals-triangle/
+# Great video: https://www.youtube.com/watch?v=9XQ0SCx03zY
 
 class Solution(object):
     def generate(self, numRows):
