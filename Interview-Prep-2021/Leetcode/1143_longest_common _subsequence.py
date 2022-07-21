@@ -16,7 +16,7 @@ class Solution:
             # second character.
             if text1[0] == text2[0]:
                 return 1+auxiliary(text1[1:], text2[1:])
-            # Recurse on each string and see with gives the max answer.
+            # Recurse on each string and see which recursion call gives the max substring.
             else:
                 return max(auxiliary(text1[1:], text2), auxiliary(text1, text2[1:]))
         
