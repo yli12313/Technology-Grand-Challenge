@@ -13,7 +13,7 @@ class Solution:
                 return 0
             
             # If the first character of each string is equal to each other, we found a match (+1) and recurse on each string starting from the
-            # first character.
+            # second character.
             if text1[0] == text2[0]:
                 return 1+auxiliary(text1[1:], text2[1:])
             # Recurse on each string and see with gives the max answer.
