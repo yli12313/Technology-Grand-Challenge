@@ -50,7 +50,7 @@ class Solution(object):
           # The INDEX values that can do that is: [3, 0, 1, 2]
 
           # Populate the matrix with rotated values.
-          matrix[cur_i][cur_j] = temp[(k-1) % 4]
+          matrix[cur_i][cur_j] = temp[(k+3) % 4]
 
           # Use the rorateIndex() function to get the next set of 
           # index values.
