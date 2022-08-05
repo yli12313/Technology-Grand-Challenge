@@ -2,7 +2,6 @@
 
 class Solution(object):
     def isPalindrome(self, s):
-        
         # If it's an empty string, return True that the string is a palindrome.
         if len(s) == "":
             return True
