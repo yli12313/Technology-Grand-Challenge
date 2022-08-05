@@ -15,7 +15,6 @@ class Solution(object):
         return result
     
     def backtracking(self, numbers, index, limit, holder, result):
-
         # Defining the base case: if the limit is 0, we are ready to 
         # append the currently growing list to the resulting list.
         # Return from this level and backtrack to an upper level in 
