@@ -8,7 +8,6 @@ class TreeNode(object):
 
 class Solution(object):
   def sumEvenGrandparent(self, root):
-
     # Pass the root into an auxiliary function. The genius to this solution is that the sum/answer
     # is passed into the function itself and tabulated via recursion!
     return self.auxiliary(0, root, None, None)
