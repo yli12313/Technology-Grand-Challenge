@@ -28,3 +28,6 @@ class Solution(object):
 
     # Return the count.
     return count
+  
+foo = Solution();
+print(foo.minimumOperations([0]));
