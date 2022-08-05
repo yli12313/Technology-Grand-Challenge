@@ -26,3 +26,6 @@ class Solution(object):
 
         # Return the words of the sentence as the answer.
         return ' '.join(map(str, [x[1] for x in holder2])).strip()
+    
+foo = Solution();
+print(foo.sortSentence("is2 sentence4 This1 a3"));
