@@ -43,7 +43,11 @@ class Solution(object):
       if len(result) > 1 and result[-1] == result[-2] == cur_val:
         
         # The heap should only have non-zero values. If the heap is empty,
-        # then stop all operations. This stops the triple case: 'ccc'
+        # then stop all operations. This stops the triple case: 'ccc'. Let's say
+        # you have 'cc' and you encounter another 'c'. If there's no other values
+        # in the max-heap, then the only thing you can make is 'ccc', which is NOT
+        # a happy string. Therefore you break and return the string as is without
+        # any further modifications!
         if not max_heap:
           break
 
