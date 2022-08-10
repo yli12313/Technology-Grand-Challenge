@@ -1,0 +1,39 @@
+Vue.js cheatsheet
+
+## Expressions ##
+<div id=“app”>
+  <p>I have a {{  product }} </p>
+  <p>{{  product + ’s’  }}</p>
+  <p>{{  isWorking ? ‘YES’  :  ‘NO’  }}</p>
+  <p>{{  product.getSalePrice()  }}</p>
+</div>
+
+## Actions/Events ##
+Calls addToCart method on component
+<button v-on:click=“addToCart”>…
+
+Shorthand syntax
+<button @click=“addToCart”>…
+
+Arguments can be passed
+<button @click=“addToCart(product)”>…
+
+To prevent default behavior (e.g. page reload)
+<form @submit.prevent=“addProduct”>…
+
+Only trigger once
+<img @mouseover.once=“showImage”>…
+.stop	Stop all event propagation
+.self		Only trigger if event.target is element itself
+
+Keyboard entry example
+<input @keyup.enter=“submit”>
+
+Call onCopy when control-c is pressed
+<input @keyup.ctrl.c=“onCopy”>
+
+## Binding ##
+<a v-bind:href=“url”>…</a>
+
+Shorthand syntax
+<a :href=“url”>…</a>
