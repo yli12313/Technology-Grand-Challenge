@@ -25,8 +25,8 @@ To prevent default behavior (e.g. page reload)
 
 Only trigger once
 <img @mouseover.once=“showImage”>…
-.stop	Stop all event propagation
-.self		Only trigger if event.target is element itself
+.stop		Stop all event propagation
+.self			Only trigger if event.target is element itself
 
 Keyboard entry example
 <input @keyup.enter=“submit”>
@@ -39,3 +39,50 @@ Call onCopy when control-c is pressed
 
 Shorthand syntax
 <a :href=“url”>…</a>
+
+True or false will add or remove attribute
+<button :disabled=“isButtonDisabled”>…
+
+If isActive is truthy, the class ‘active’ will appear
+<div :class=“{  active: isActive  }”>…
+
+Style color set to value of activeColor
+<div :style=“{  color: activeColor  }”>
+
+## List rendering ##
+The :key is always recommended
+<li v-for=“item in items”
+     :key=“item.id”>
+    {{  item  }}
+</li>
+
+To access the position in the array
+<li v-for=“(item, index) in items”>…
+
+To iterate through objects
+<li v-for=“(value, key) in object”>…
+
+Using v-for with a component
+<cart-product v-for=“item in products”
+                         :product=“item”
+                         :key=“item.id”>
+
+## Directives ##
+Element inserted/removed based on truthiness
+<p v-if=“in-stock”>{{  product  }}</p>
+
+<p> v-else-if=“onSale”>…</p>
+<p> v-else>…</p>
+
+Toggles the display: none CSS property
+<p v-show=“showProductDetails”>…</p>
+
+Two-way data binding
+<input v-model=“firstName” >
+v-model.lazy=“…”		Syncs input after change event
+v-model.number=“…”	Always returns a number
+v-model.trim=“…”		Strips whitespace
+
+################
+## Components ##
+################
