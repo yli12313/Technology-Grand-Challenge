@@ -1,4 +1,4 @@
-# LINK: https://leetcode.com/problems/customers-who-never-order/
+# LINK: https://leetcode.com/problems/duplicate-emails/
 
 # NOTE: Using a GROUP BY with a HAVING clause with a COUNT operation! Actually
 # solved this problem last year, but it's a good practice again. 
