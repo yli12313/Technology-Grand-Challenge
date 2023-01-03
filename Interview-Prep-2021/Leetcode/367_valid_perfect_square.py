@@ -11,6 +11,10 @@
 # The right boundary you always shrink [i.e. 'mid-1'].
 # The left boundary you always increase [i.e. 'mid+1'].
 
+# This is a good heuristic to know, but it's not always this way. So it's important 
+# to check the logic after you write it! Just have to slow down and do some serious 
+# thinking after you've written the logic.
+
 class Solution(object):
   def isPerfectSquare(self, num):
     left=1
