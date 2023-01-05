@@ -10,7 +10,6 @@
 # cutoff point where this happens, the last element that when you take the square of it, it's still less than
 # the target 'X'.
 
-
 class Solution(object):
   def mySqrt(self, x):
     left=1
