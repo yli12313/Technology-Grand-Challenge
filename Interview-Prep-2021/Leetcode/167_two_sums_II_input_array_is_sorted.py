@@ -1,6 +1,6 @@
 # LINK: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 
-# THOUGHTS: I had to take a look at the answers. This is actually a very easy 
+# NOTE: I had to take a look at the answers. This is actually a very easy 
 # It's not a binary search, but actually just a two pointers problem! Two pointers problems
 # are very similar to binary search problems. I was not thinking about the problem
 # the right way at all! Lessons learned from this problem:
