@@ -1,6 +1,6 @@
 # LINK: https://leetcode.com/problems/kth-missing-positive-number/
 
-# THOUGHTS: This was not a hard problem at all, but I did not think about the problem
+# NOTE: This was not a hard problem at all, but I did not think about the problem
 # the right way. I did not realize that to get the 'k-th' missing value, you have to iterate
 # through the array and add all elements that are '<=k' to 'k' to get the answer. What I
 # learned from this problem is that:
