@@ -7,6 +7,10 @@
 # count. Because the answer is unique, you just need to find the i that's equal to the count, for example
 # 'count==i'.
 
+# I guess one big key takeaway is to always look at the constraints before starting a problem! The constraints
+# are very important. Had I looked at the contraints for this problem first, I would have not been as confused
+# with the nature of the problem.
+
 # An FYI: the sorted() function always sorts in ascending order (i.e. the values increase and become larger).
 
 class Solution(object):
