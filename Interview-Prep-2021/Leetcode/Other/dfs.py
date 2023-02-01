@@ -53,8 +53,6 @@ def dfs(visited, graph, node):
       elif len(graph[current])==1:
         stack.append(graph[current][0])
 
-dfs(visited, graph, 'A')
-
 ## This is the recursive implementation of DFS. ##
 # visited=set()
 
