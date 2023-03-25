@@ -1,4 +1,4 @@
-#### <ins>NOVA Code & Coffee Notes [Sat. 3/25/23]</ins>:
+#### <ins>NOVA Code & Coffee Notes [Sat. 3/25/23 @ 9:00 AM EST]</ins>:
 
 **Model-View-ViewModel**:
 * Model < ViewModel < View
