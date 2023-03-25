@@ -10,5 +10,5 @@
 	* It's not a one-to-one relationship with the OS thread
 	* The three most important features of Go: **Goroutines**, **Channels**, **Context**
 	* Goroutines are great for concurrent programming; I think **Channels** allows threads to talk to each other
-	* The Go **Scheduler** is very powerful; the Scheduler controls threads, that are light-weight
+	* The Go **Scheduler** is very powerful; the Scheduler controls the threads, which are light-weight
 	* Garbage collection is also faster than say in Java
