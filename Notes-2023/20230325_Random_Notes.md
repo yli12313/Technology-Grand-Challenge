@@ -1,3 +1,8 @@
+#### <ins>Conversation with Arthur</ins>:
+* Documentary: General Magic
+* Concept: Jail Break
+* Book: Hacking the Art of Exploitation
+
 #### <ins>NOVA Code & Coffee Notes [Sat. 3/25/23 @ 9:00 AM EST]</ins>:
 
 **Model-View-ViewModel**:
