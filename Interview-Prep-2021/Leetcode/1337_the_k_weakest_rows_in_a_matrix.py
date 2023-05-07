@@ -2,7 +2,7 @@ import heapq
 
 class Solution(object):
   def kWeakestRows(self, mat, k):
-  	# (Problem solving approach 1):
+    # (Problem solving approach 1):
     # Go through every entry of the matrix, which is a list.
     # Count the number of 1s (soldiers), and store it in a dictionary: {row X : solder_count Y}.
     # Sort by the [soldier_count].
