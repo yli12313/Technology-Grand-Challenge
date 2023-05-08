@@ -4,7 +4,7 @@
 
 <ins>**Feasibility Analysis Components**</ins>
 * *Executive Summary*
-    * For an online business, you may want to prepare what's called a *_proof of concept_*. This is essentially a one-page statement of why your concept will work, emphasizing what you have done to prove that customers will come to your site. 
+    * For an online business, you may want to prepare what's called a **_proof of concept_**. This is essentially a one-page statement of why your concept will work, emphasizing what you have done to prove that customers will come to your site. 
 * *Business Concept*
     * What is the business?
     * Who is the customer?
