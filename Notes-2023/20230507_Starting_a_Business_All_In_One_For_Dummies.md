@@ -1,4 +1,4 @@
-Link is (here)[https://learning.oreilly.com/library/view/starting-a-business/9781119868569/c01.xhtml#h2-2].
+Link is [here](https://learning.oreilly.com/library/view/starting-a-business/9781119868569/c01.xhtml#h2-2).
 
 **## Chapter 1: Your Business in Context ##**
 * **Feasibility Analysis Components**
