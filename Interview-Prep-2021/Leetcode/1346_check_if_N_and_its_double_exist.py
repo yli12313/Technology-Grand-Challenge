@@ -1,3 +1,5 @@
+# LINK: https://leetcode.com/problems/check-if-n-and-its-double-exist/
+
 class Solution(object):
   def checkIfExist(self, arr):
     # Approach 1 (Trying it out):
