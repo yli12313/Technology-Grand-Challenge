@@ -1,4 +1,4 @@
-# Link: https://leetcode.com/problems/longest-happy-string/
+# LINK: https://leetcode.com/problems/longest-happy-string/
 
 # Import the libraries that are needed.
 # Note: When you need a heap, always use: from heapq import *
