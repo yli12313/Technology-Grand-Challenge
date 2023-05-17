@@ -5,8 +5,6 @@ class Solution(object):
     # - If the mid > nums[len(nums)-1], then the first pointer is mid + 1
     # - Else, the second pointer mid - 1
 
-    # WRONG APPROACH
-
     # i=0
     # j=len(nums)-1
 
@@ -42,6 +40,8 @@ class Solution(object):
 
     # return -1
 
+    # WRONG APPROACH: No use in wasting time when you have the WRONG APPROACH!
+
     # Approach 2:
     # Do a binary search like normal, calculating the midpoint.
     # If the midpoint equals the target, return the midpoint.
@@ -73,7 +73,6 @@ class Solution(object):
           j=mid-1
 
     return -1
-
 
 foo = Solution();
 print(foo.search([4,5,6,7,0,1,2], target = 0));
