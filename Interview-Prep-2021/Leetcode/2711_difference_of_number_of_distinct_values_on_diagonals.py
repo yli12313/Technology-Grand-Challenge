@@ -32,8 +32,7 @@ class Solution(object):
         while m > 0 and n > 0:
           m -= 1
           n -= 1
-          tl = grid[m][n]
-          topLeft.add(tl)
+          topLeft.add(grid[m][n])
         
         # Adding the diagonal values from the bottomRight to it's corresponding set.
         m = i
@@ -41,8 +40,7 @@ class Solution(object):
         while m < len(grid)-1 and n < len(grid[0])-1:
           m += 1
           n += 1
-          br = grid[m][n]
-          bottomRight.add(br)
+          bottomRight.add(grid[m][n])
         
         # Calculate the answer for the (i, j) coordinate.
         answer[i][j] = abs(len(topLeft) - len(bottomRight))
