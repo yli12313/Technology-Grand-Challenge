@@ -3,4 +3,5 @@
 * [US SEC charges crypto platform Coinbase, one day after suing Binance](https://www.reuters.com/legal/us-sec-sues-coinbase-over-failure-register-2023-06-06/) (Thu. 6/6/23 @ 12:34 PM EST)
 
 **<ins>Business Articles</ins>:**
+* [A Primer on U.S. Banking Laws](https://www.investopedia.com/important-u-s-banking-laws-5217476)
 
