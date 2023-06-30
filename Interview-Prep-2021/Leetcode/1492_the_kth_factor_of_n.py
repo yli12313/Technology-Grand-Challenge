@@ -1,6 +1,6 @@
 # LINK: https://leetcode.com/problems/the-kth-factor-of-n/
 
-import math
+from math import *
 
 class Solution(object):
   def kthFactor(self, n, k):
@@ -20,8 +20,8 @@ class Solution(object):
     counter = k
 
     # Grab the square root of n's floor and ceiling
-    sqrt_root_floor = int(floor(math.sqrt(n)))
-    sqrt_root_ceil = int(ceil(math.sqrt(n)))
+    sqrt_root_floor = int(floor(sqrt(n)))
+    sqrt_root_ceil = int(ceil(sqrt(n)))
 
     # Loop through to the square root ceiling, but not including it. 
     # If you've found the the kth factor, then return it.
