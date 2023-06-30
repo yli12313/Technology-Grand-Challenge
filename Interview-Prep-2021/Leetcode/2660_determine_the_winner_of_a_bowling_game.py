@@ -17,6 +17,9 @@ class Solution(object):
     scoreP2 = 0
 
     for i in range(len(player1)):
+
+      # Good idea: Break if-statement logic into a method.
+        
       # Calculating the score for Player1.
       if (i-1 >= 0 and player1[i-1] >= 10) or (i-2 >= 0 and player1[i-2] >= 10):
         scoreP1 += 2*player1[i]
