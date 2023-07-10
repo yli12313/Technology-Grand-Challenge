@@ -8,4 +8,8 @@
 
 **<ins>List of Books to Read</ins>:**
 * [How Discord Stores Trillions of Messages](https://discord.com/blog/how-discord-stores-trillions-of-messages)
+* [Building Netflix's Distributed Tracing Infrastructure](https://netflixtechblog.com/building-netflixs-distributed-tracing-infrastructure-bb856c319304)
+* [Predictive CPU isolation of containers at Netflix](https://netflixtechblog.com/predictive-cpu-isolation-of-containers-at-netflix-91f014d856c7)
+* [Hearding elephants: Lessons learned from sharding Postgres at Notion](https://www.notion.so/blog/sharding-postgres-at-notion)
+* [Intelligent DNS based load balancing at Dropbox](https://dropbox.tech/infrastructure/intelligent-dns-based-load-balancing-at-dropbox)
 
