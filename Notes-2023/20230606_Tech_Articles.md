@@ -12,4 +12,6 @@
 * [Predictive CPU isolation of containers at Netflix](https://netflixtechblog.com/predictive-cpu-isolation-of-containers-at-netflix-91f014d856c7)
 * [Hearding elephants: Lessons learned from sharding Postgres at Notion](https://www.notion.so/blog/sharding-postgres-at-notion)
 * [Intelligent DNS based load balancing at Dropbox](https://dropbox.tech/infrastructure/intelligent-dns-based-load-balancing-at-dropbox)
+* [How To Do Great Work](http://paulgraham.com/greatwork.html#f2n)
+* [Invisible Details of Interaction Design](https://rauno.me/craft/interaction-design)
 
