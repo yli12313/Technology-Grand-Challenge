@@ -8,6 +8,7 @@
 * [Hosting a Prefect server](https://docs.prefect.io/latest/host/) (Thu. 7/13/23 @ 2:27 AM EST)
 * [MLOps Landscape in 2023: Top Tools and Platforms](https://neptune.ai/blog/mlops-tools-platforms-landscape) (Model Observability)
 * [The definitive Guide to Docker compose](https://gabrieltanner.org/blog/docker-compose/) (Volumes:)
+* [(Prefect) Tutorial Overview](https://docs.prefect.io/latest/tutorial/) (Just started)
 
 **<ins>List of Articles to Read</ins>:**
 * [How Discord Stores Trillions of Messages](https://discord.com/blog/how-discord-stores-trillions-of-messages)
