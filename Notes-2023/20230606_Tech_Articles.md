@@ -6,7 +6,7 @@
 * [Emerging Architectures for LLM Applications](https://a16z.com/2023/06/20/emerging-architectures-for-llm-applications/) (Sun. 6/25/23 @ 6:09 PM EST)
 * [Creating an Autonomous System for Fun and Profit](https://blog.thelifeofkenneth.com/2017/11/creating-autonomous-system-for-fun-and.html) (Tue. 6/27/23 @ 2:56 PM EST)
 * [Hosting a Prefect server](https://docs.prefect.io/latest/host/) (Thu. 7/13/23 @ 2:27 AM EST)
-* [MLOps Landscape in 2023: Top Tools and Platforms](https://neptune.ai/blog/mlops-tools-platforms-landscape) (Model Observability)
+* [MLOps Landscape in 2023: Top Tools and Platforms](https://neptune.ai/blog/mlops-tools-platforms-landscape) (Thu. 7/20/23 @ 5:06 PM EST)
 * [The definitive Guide to Docker compose](https://gabrieltanner.org/blog/docker-compose/) (Volumes:)
 * [(Prefect) Tutorial Overview](https://docs.prefect.io/latest/tutorial/) (Just started)
 
