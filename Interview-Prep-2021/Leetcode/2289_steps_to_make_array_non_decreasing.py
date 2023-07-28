@@ -44,7 +44,5 @@ class Solution(object):
     # Return the answer.
     return answer
 
-
-
 foo = Solution();
 print(foo.totalSteps([5,3,4,4,7,3,6,11,8,5,11]));
