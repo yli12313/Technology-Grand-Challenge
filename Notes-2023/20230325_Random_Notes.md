@@ -2,11 +2,13 @@
 * [Automatic Meal Planner](https://www.eatthismuch.com/)
 * [Road Trip Planner](https://roadtrippers.com/)
 * [Free PDF Conversion Tool](https://smallpdf.com/)
-* (To Finish Documenting)
+* (Continue documenting...)
 
 #### [8 Mind-Blowing Websites You Probably Didn't Know Existed](https://www.youtube.com/watch?v=PiYS3PMXOjc) (Sun. 7/30/23 @ 12:35 AM EST):
 * [Witeboard](https://witeboard.com/) - Drawing
+* [Coverr](https://coverr.co/) - Free videos
 * [Untools](https://untools.co/) - Thinking tools and frameworks
+* (Continue documenting...)
 
 
 ---
