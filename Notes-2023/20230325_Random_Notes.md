@@ -1,4 +1,4 @@
-#### [66 Most Useful Websites Everyone Should Know!](https://www.youtube.com/watch?v=fDdeeMCMJ1c) (Sat. 3/25/23 @ 9:00 AM EST):
+#### [66 Most Useful Websites Everyone Should Know!](https://www.youtube.com/watch?v=fDdeeMCMJ1c) (Sun. 7/30/23 @ 12:12 AM EST):
 
 ---
 
