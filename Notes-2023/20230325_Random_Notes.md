@@ -11,6 +11,7 @@
 * (Continue documenting...)
 
 #### [Top 25 INSANELY Useful websites that feel ILLEGAL to know...](https://www.youtube.com/watch?v=QlIAj6XhXPw) (Sun. 7/30/23 @ 12:44 AM EST):
+* [Answer Socrates](https://answersocrates.com/)
 
 ---
 
