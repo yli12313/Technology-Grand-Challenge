@@ -14,6 +14,7 @@
 * [Answer Socrates](https://answersocrates.com/)
 * [pictory.ai](https://pictory.ai/)
 * [supercook.com](https://www.supercook.com/#/desktop)
+* [cloudconvert.com](https://cloudconvert.com/)
 * [gethuman.com](https://gethuman.com/)
 
 ---
