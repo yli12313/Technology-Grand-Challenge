@@ -1,4 +1,8 @@
 #### [66 Most Useful Websites Everyone Should Know!](https://www.youtube.com/watch?v=fDdeeMCMJ1c) (Sun. 7/30/23 @ 12:12 AM EST):
+* [Automatic Meal Planner](https://www.eatthismuch.com/)
+* [Road Trip Planner](https://roadtrippers.com/)
+* [Free PDF Conversion Tool](https://smallpdf.com/)
+* 
 
 ---
 
