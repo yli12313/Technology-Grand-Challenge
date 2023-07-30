@@ -1,8 +1,8 @@
-#### <ins>[66 Most Useful Websites Everyone Should Know!](https://www.youtube.com/watch?v=fDdeeMCMJ1c) [Sat. 3/25/23 @ 9:00 AM EST]</ins>:
+#### [66 Most Useful Websites Everyone Should Know!](https://www.youtube.com/watch?v=fDdeeMCMJ1c) (Sat. 3/25/23 @ 9:00 AM EST):
 
 ---
 
-#### <ins>NOVA Code & Coffee Notes [Sat. 3/25/23 @ 9:00 AM EST]</ins>:
+#### NOVA Code & Coffee Notes (Sat. 3/25/23 @ 9:00 AM EST):
 
 **Model-View-ViewModel**:
 * Model < ViewModel < View
