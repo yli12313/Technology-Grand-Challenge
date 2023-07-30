@@ -1,7 +1,5 @@
-#### <ins>Conversation with Arthur</ins>:
-* Documentary: General Magic
-* Concept: Jail Break
-* Book: Hacking the Art of Exploitation
+
+---
 
 #### <ins>NOVA Code & Coffee Notes [Sat. 3/25/23 @ 9:00 AM EST]</ins>:
 
@@ -17,3 +15,8 @@
 	* Goroutines are great for concurrent programming; I think **Channels** allows threads to talk to each other
 	* The Go **Scheduler** is very powerful; the Scheduler controls the threads, which are light-weight
 	* Garbage collection is also faster than say in Java
+
+#### <ins>Conversation with Arthur</ins>:
+* Documentary: General Magic
+* Concept: Jail Break
+* Book: Hacking the Art of Exploitation
