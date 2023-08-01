@@ -7,6 +7,7 @@ class Solution(object):
     # 2) Water can only be trapped above bars 1..n-2. Therefore, you want to do a two pointer problem from 1..n-2.
     # 3) If the current bar is greater than the max left bar, update max left. Else, update trapped water. Increase
     # the pointer. Use symmetry to do the same thing for the right side. 
+    # 4) You calculate the trapped water above a bar based on the smaller one between the max left bar or max right bar.
     # 4) Return the trappedWater total as the answer.
 
     #---------
@@ -19,32 +20,30 @@ class Solution(object):
 
     n = len(height)
 
-    if n <= 2:
-      return 0
-
-    left = 1
-    right = n-2
     leftMax = height[0]
     rightMax = height[n-1]
-    trappedWater = 0
+    left = 1
+    right = n-2
+
+    trapped_water = 0
 
     while left <= right:
-      if (leftMax < rightMax):
-        if height[left] >= leftMax:
+      if leftMax < rightMax:
+        if leftMax < height[left]:
           leftMax = height[left]
         else:
-          trappedWater += leftMax - height[left]
+          trapped_water += leftMax - height[left]
 
         left += 1
       else:
-        if height[right] > rightMax:
+        if rightMax < height[right]:
           rightMax = height[right]
         else:
-          trappedWater += rightMax - height[right]
+          trapped_water += rightMax - height[right]
 
         right -= 1
-
-    return trappedWater
+    
+    return trapped_water
 
 foo = Solution();
 print(foo.trap([0,1,0,2,1,0,1,3,2,1,2,1]));
