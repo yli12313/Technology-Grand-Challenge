@@ -1,3 +1,5 @@
+# LINK: https://leetcode.com/problems/gas-station/
+
 class Solution(object):
   def canCompleteCircuit(self, gas, cost):
     # Approach 1: Used ChatGPT and used the GPT solution.
