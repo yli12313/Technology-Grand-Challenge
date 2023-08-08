@@ -18,6 +18,8 @@ class Solution(object):
     # 5) If so, return the answer. 
     # 6) Return "" by default. 
 
+    # TC: O(len1 + len2)
+
     def gcd(a, b):
       while b:
           a, b = b, a%b
