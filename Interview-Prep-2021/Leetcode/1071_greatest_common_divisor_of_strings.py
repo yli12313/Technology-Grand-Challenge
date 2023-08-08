@@ -31,7 +31,7 @@ class Solution(object):
     # str1+str2 == str2+str1 is NOT true, then we can return ""
     # automatically. If the condition is true, then you know both
     # strings have the same t of a specific length where "t divides s". 
-    # In the beginning you have no idea if both strings given have a 
+    # In the beginning you have no idea if both strings given have the 
     # same t where "t divides s"!
     if str1+str2 == str2+str1:
         if str1[:gcd_length] == str2[:gcd_length]:
