@@ -63,6 +63,5 @@ class Solution(object):
 
     return answer
 
-
 foo = Solution();
 print(foo.kidsWithCandies([2,3,5,1,3], 3));
