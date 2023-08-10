@@ -1,3 +1,5 @@
+# LINK: https://leetcode.com/problems/greatest-common-divisor-of-strings/
+
 class Solution(object):
   def gcdOfStrings(self, str1, str2):
     # Approach 1:
