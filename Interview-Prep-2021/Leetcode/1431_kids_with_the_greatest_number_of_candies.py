@@ -14,7 +14,6 @@ class Solution(object):
 
     # How to find the max in the array fast? Use max().
 
-
     # Define answer array.
     answer = []
 
