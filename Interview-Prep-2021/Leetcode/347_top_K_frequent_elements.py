@@ -30,9 +30,11 @@ class Solution(object):
         # zero times.
         freq = [[] for i in range(len(nums)+1)]
 
+        # Add to the count.
         for n in nums:
             count[n] = 1 + count.get(n, 0)
-        
+
+        # Loop through the count and add to the frequency list.
         for n,c in count.items():
             freq[c].append(n)
         
