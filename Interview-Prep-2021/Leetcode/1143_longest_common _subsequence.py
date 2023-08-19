@@ -1,6 +1,6 @@
-# Link: https://leetcode.com/problems/longest-common-subsequence/
+# LINK: https://leetcode.com/problems/longest-common-subsequence/
 
-# Note: This solution works with only Python3.
+# NOTE: This solution works with only Python3.
 
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
