@@ -12,7 +12,7 @@ class Solution(object):
         # - Else, return true.
         # By default return false.
 
-        # NOTES: Not smart! Don't need to make the problem more complicated than it needs to be.
+        # NOTE: Not smart! Don't need to make the problem more complicated than it needs to be.
 
         # storage = {}
 
