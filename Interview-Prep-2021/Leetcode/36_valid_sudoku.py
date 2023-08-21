@@ -26,6 +26,7 @@ class Solution(object):
 
         n = len(board)
 
+        # Great insight: When looking through rows and columns, use r, c as variable names instead!
         for r in range(n):
             for c in range(n):
                 if board[r][c] == ".":
