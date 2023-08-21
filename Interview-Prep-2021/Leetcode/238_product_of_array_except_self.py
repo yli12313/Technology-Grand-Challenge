@@ -1,4 +1,4 @@
-#LINK: https://leetcode.com/problems/product-of-array-except-self/
+# LINK: https://leetcode.com/problems/product-of-array-except-self/
 
 class Solution(object):
     def productExceptSelf(self, nums):
