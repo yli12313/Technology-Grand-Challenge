@@ -43,6 +43,7 @@ class Solution(object):
         res = []
 
         ## At this point, you are only working with the freq list of lists! ##
+        ## Still working with nums! After you construct freq, you only work with freq! ##
         
         # This is looping from the max number of counts possible down to 1 and not including 0!
         for i in range(len(freq)-1, 0, -1):
