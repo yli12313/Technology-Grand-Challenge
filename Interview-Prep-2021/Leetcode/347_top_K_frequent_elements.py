@@ -37,8 +37,12 @@ class Solution(object):
         # Loop through the count and add to the frequency list.
         for n,c in count.items():
             freq[c].append(n)
-        
+
+        # Declaring the resulting answer list.
         res = []
+
+        ## At this point, you are only working with the freq list of lists! ##
+        
         # This is looping from the max number of counts possible down to 1 and not including 0!
         for i in range(len(freq)-1, 0, -1):
             for n in freq[i]:
