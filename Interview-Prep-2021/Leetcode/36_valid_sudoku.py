@@ -20,6 +20,9 @@ class Solution(object):
         # After doing (r//3, c//3), the rows/columns range is now the following: 
         # [0,1,2]
 
+        # TC: O(N^2)
+        # SC: Not Sure.
+
         rows = collections.defaultdict(set)
         cols = collections.defaultdict(set)
         square = collections.defaultdict(set)
