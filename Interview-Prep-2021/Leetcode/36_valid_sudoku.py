@@ -14,10 +14,11 @@ class Solution(object):
         # - and document the code. Just really have to understand how the (r//3, c//3) tricks works!
 
         # NOTE: The (r//3, c//3) trick is very simple. Right now in a normal sudoku board, the rows/columns 
-        # range is the following: 0,1,2,3,4,5,6,7,8.
+        # range is the following: 
+        # [0,1,2,3,4,5,6,7,8]
 
-        # After doing (r//3, c//3), the rows/columns
-        # is now the following: 0,1,2.
+        # After doing (r//3, c//3), the rows/columns range is now the following: 
+        # [0,1,2]
 
         rows = collections.defaultdict(set)
         cols = collections.defaultdict(set)
