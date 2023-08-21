@@ -42,7 +42,7 @@ class Solution(object):
         # TC: O(M*N) where M is the number of words in the list and N is the average word length.
         # SC: O(M*N) where M is the number of words in the list and N is the average word length.
 
-        anagram = defaultdict(list)
+        anagram = collections.defaultdict(list)
 
         for word in strs:
             count = [0]*26
