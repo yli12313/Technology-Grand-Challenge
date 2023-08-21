@@ -35,7 +35,8 @@ class Solution(object):
                    (board[r][c] in cols[c]) or \
                    (board[r][c] in square[(r//3, c//3)]):
                     return False
-                
+
+                # Be careful: the function here is add().
                 rows[r].add(board[r][c])
                 cols[c].add(board[r][c])
                 square[(r//3, c//3)].add(board[r][c])
