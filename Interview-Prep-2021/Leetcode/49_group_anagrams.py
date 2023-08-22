@@ -42,6 +42,7 @@ class Solution(object):
         # TC: O(M*N) where M is the number of words in the list and N is the average word length.
         # SC: O(M*N) where M is the number of words in the list and N is the average word length.
 
+        # Remember to define a 'collections.defaultdict(list)' right here.
         anagram = collections.defaultdict(list)
 
         for word in strs:
@@ -50,6 +51,7 @@ class Solution(object):
             for c in word:
                 count[ord(c)-ord('a')] += 1
 
+            # Once you have used 'collections.defaultdict(list)', you have to use 'append'.
             anagram[tuple(count)].append(word)
         
         return anagram.values()
