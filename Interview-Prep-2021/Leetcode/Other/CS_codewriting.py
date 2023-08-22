@@ -73,8 +73,12 @@ def solution(a):
         if d[i] > max:
             max = d[i]
     
-    # Construct the answer list. Do it with the construct:
+    # 1) Construct the answer list. Do it with the construct:
     # [exp for exp if exp]
+
+    # 2) You are looking to return the keys (where they are strings
+    # that you convert to ints) where the frequency (v) is equal to
+    # the max!
     l = [int(k) for k,v in d.items() if v == max]
 
     # Sort and return the answer.
