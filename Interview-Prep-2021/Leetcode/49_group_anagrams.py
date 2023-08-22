@@ -52,6 +52,7 @@ class Solution(object):
                 count[ord(c)-ord('a')] += 1
 
             # Once you have used 'collections.defaultdict(list)', you have to use 'append'.
+            # You have to append the words, which is 'word' in the first for loop.
             anagram[tuple(count)].append(word)
         
         return anagram.values()
