@@ -56,8 +56,8 @@ def solution(a):
     """
 
     # Approach 2:
-    # - Much simpler implementation! The key is to join all the numbers together 
-    # into a string.
+    # - Much simpler implementation! The key is to join all the numbers 
+    # together into a single string.
     
     a = "".join(str(x) for x in a)
     d = {}
