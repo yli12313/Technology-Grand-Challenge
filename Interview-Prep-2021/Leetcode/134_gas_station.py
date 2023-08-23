@@ -12,7 +12,10 @@ class Solution(object):
     # the computation is 'total_gas += gas[i]-cost[i]', the computation that we have to therefore check
     # in the final return statement is 'total_gas >= 0'.
 
-    # Setting the variables.
+    # Setting the variables. When you set the problem up, you have to start with:
+    # 1) total_gas
+    # 2) current_gas
+    # 3) station
     total_gas = 0
     current_gas = 0
     station = 0
