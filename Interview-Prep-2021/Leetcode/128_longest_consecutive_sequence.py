@@ -1,3 +1,5 @@
+# LINK: https://leetcode.com/problems/longest-consecutive-sequence/
+
 class Solution(object):
     def longestConsecutive(self, nums):
         # Constraints
