@@ -35,6 +35,8 @@ class Solution(object):
         # but this video helps a lot (https://www.youtube.com/shorts/Az8S1ZGpV_M).
         # Let me keep trying! 
 
+        # When you set up the problem, the best is the first element. That's the
+        # best we got!
         best = nums[0]
         # Make sure to set cur to 0.
         cur = 0
