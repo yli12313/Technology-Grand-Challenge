@@ -27,6 +27,9 @@ class Solution(object):
         # Compare the streak to the previous longest one and return the max.
         # - Return the answer.
 
+        # TC: O(N)
+        # SC: O(N)
+
         # This part was also tricky. Start by creating a set to remove duplicate
         # values in nums.
         nums_set = set(nums)
