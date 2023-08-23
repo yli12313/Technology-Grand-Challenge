@@ -47,8 +47,10 @@ class Solution(object):
 
         if len(s) != len(t):
             return False
-        
-        hashset = {}
+
+        # When you see anagrams, you should immediately think of hash tables that
+        # can be used to count the frequencies of the characters. If the two hash tables
+        # are the same, then you have two anagrams of each other!
         hash_s, hash_t = {}, {}
 
         for i in range(len(s)):
