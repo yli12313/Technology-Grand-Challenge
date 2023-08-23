@@ -55,8 +55,8 @@ class Solution(object):
         # Approach 2:
         # - Strip the string of non-alphanumeric characters and convert each character to 
         # lower case.
-        # - Set pointer as the index of the first character and pointer as the 
-        # index of the last character.
+        # - Set pointer as the index of the first character and pointer as the index of the 
+        # last character.
         # - Do a while loop where start < end. See if the characters match each other. If they
         # don't return False. 
         # - Increment the start pointer and decrement the end pointer.
@@ -66,12 +66,12 @@ class Solution(object):
         # SC: O(N)
 
         # NOTE: I had a solution from last June that works, but it's a very convoluted solution.
-        # It is a O(N) space complexity solution however. I'm learning a lot from the Neetcode 
-        # solutions however.
+        # Here is a solution I just coded, however it's a O(N) space complexity solution. I'm learning 
+        # a lot from the Neetcode solutions however.
 
-        # The expression here is (where s is the collection!):
-        # (exp for c in s if exp)
         """
+        # The expression here is (where s is the collection!):
+        # 'exp for c in s if exp'
         s = "".join(c.lower() for c in s if c.isalnum())
 
         start = 0
@@ -89,9 +89,10 @@ class Solution(object):
         # Approach 3: Trying the Neetcode solution. This solution is pretty interesting.
         # - Define your own is alphanumeric function.
         # - Define two pointers again.
-        # - Use two while() loops to to find only the characters we are looking for.
-        # - Compare the values from the two pointers and if they are not equal, return False.
-        # - Update pointers.
+        # - Use two while() loops to find only the alphanumeric characters we are looking for.
+        # - Compare the lowercase values from the two pointers and if they are not equal, 
+        # return False.
+        # - Update the two pointers.
         # - Return True.
 
         # TC: O(N)
@@ -108,8 +109,8 @@ class Solution(object):
                 r -= 1
 
             # Right here, you have to call the lower() function! The characters
-            # have not been converted to lowercase.
-            if s[l] != s[r]:
+            # have not been converted to lowercase yet.
+            if s[l].lower() != s[r].lower():
                 return False
             l += 1
             r -= 1
@@ -118,8 +119,8 @@ class Solution(object):
 
     def isalnum(self, c):
         """
-        This function only detected if a character is alphanumeric, but does no
-        conversion of the actual character!
+        This function only detects if a character is alphanumeric, but it does not
+        actually convert the character to lowercase!
         """
         return (ord('A') <= ord(c) <= ord('Z')) or \
             (ord('a') <= ord(c) <= ord('z')) or \
