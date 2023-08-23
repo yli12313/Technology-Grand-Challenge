@@ -35,7 +35,8 @@ class Solution(object):
         current_gas = 0
 
     # If the total_gas is non-negative once you reach the end, you've created a cycle
-    # and you can return station. Else return -1.
+    # and you can return station. Else return -1. Moreover, the return statment here is of
+    # the form: return exp if exp else exp
     return station if total_gas >= 0 else -1
 
 foo = Solution();
