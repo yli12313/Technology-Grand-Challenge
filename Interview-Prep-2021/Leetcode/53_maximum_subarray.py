@@ -9,7 +9,7 @@ class Solution(object):
         # Topic: Array.
         # This is correct! This is an Array, Divide and Conquer, and Dynamic Programming problem.
 
-        # Approach 1: Kadane's Algorithm from three years ago.
+        # Approach 1: Kadane's Algorithm from 2020.
 
         """
         # TC: O(N)
@@ -26,7 +26,7 @@ class Solution(object):
         return best
         """
 
-        # Approach 1: Kadane's Algorithm from Neetcode.
+        # Approach 2: Kadane's Algorithm from Neetcode.
 
         # TC: O(N)
         # SC: O(1)
