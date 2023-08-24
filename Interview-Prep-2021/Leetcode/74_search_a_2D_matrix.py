@@ -1,6 +1,6 @@
 # LINK: https://leetcode.com/problems/search-a-2d-matrix/
 
-# NOTE: One of the MOST IMPORTANT LeetCode problems I've solved! The trick to LeetCode
+# NOTE: One of the MOST IMPORTANT LeetCode problems I've ever solved! The trick to LeetCode
 # is to always keep going. If you are frustrated with a problem, don't lose hope and let
 # your mind start ruminating with negative self talk! If you try again, and again, and again,
 # sooner or later you will solve the problem. The applies to ANY LeetCode problem. 
