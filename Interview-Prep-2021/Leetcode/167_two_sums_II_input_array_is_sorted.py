@@ -2,7 +2,7 @@
 
 class Solution(object):
   def twoSum(self, numbers, target):
-    Constraints
+    # Constraints
     # - 1 <= index_1 <= index_2 < numbers.length
     # Numbers is sorted in ascending order.
 
