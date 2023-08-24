@@ -21,7 +21,7 @@ class Solution(object):
     # - Return '[]' by default.
 
     # TC: O(N)
-    # SC: O(1)
+    # SC: O(N)
     
     """
     d = {}
