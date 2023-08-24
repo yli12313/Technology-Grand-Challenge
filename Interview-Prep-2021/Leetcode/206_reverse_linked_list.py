@@ -14,7 +14,7 @@ class Solution(object):
 
         # Topic: Linked List and Recursion.
 
-        # Approach 1 (iterative approach):
+        # Approach 1 (Iterative Approach):
         # - The iterative approach is not hard. You have to set a temp
         # variable to 'cur.next'; the you can begin updating pointers such 
         # that you update: 
