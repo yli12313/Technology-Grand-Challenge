@@ -54,11 +54,11 @@ class Solution(object):
             
             n = len(candidates)
             for i in range(start, n):
-                # 1) Check for duplicates.
+                # 1) CHECK 1: Check for duplicates.
                 if i > start and candidates[i] == candidates[i-1]:
                     continue
                     
-                # 2) Check if candidates[i] > target.
+                # 2) CHECK 2: Check if candidates[i] > target.
                 if candidates[i] > target:
                     break
 
@@ -71,7 +71,7 @@ class Solution(object):
                 # 5) Path has to call pop().
                 path.pop()
 
-        # 6) TRICKY: Call candidates.sort()
+        # 6) TRICKY: Call 'candidates.sort()'.
         candidates.sort()
         result = []
         backtrack(0, target, [])
