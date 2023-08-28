@@ -71,7 +71,7 @@ class Solution(object):
                 # 5) Path has to call pop().
                 path.pop()
 
-        # 6) TRICKY: Call 'candidates.sort()'.
+        # 6) TRICKY: Call candidates.sort().
         candidates.sort()
         result = []
         backtrack(0, target, [])
