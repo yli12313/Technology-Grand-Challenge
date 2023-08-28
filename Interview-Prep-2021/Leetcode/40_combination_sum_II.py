@@ -32,7 +32,7 @@ class Solution(object):
         # continue onto the next value.
         # - If 'candidates[i] > target', you break.
         # - Append candidates[i] -> path.
-        # - Call 'backtrack(i+1, target-cadidates[i], path)'
+        # - Call 'backtrack(i+1, target-candidates[i], path)'
         # - TRICK: This is the cleanup step. After you've explored the path, you need to pop()
         # the last value from the path. This is because you append candidates[i] to the path
         # and then call backtrack. 
