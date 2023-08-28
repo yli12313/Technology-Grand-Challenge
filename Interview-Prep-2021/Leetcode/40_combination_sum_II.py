@@ -48,22 +48,30 @@ class Solution(object):
 
         def backtrack(start, target, path):
             if target == 0:
-                # To make a copy of the list path, you have to slice the list using '[:]'.
+                # TRICKY: To make a copy of the list path, you have to slice the list using '[:]'.
                 result.append(path[:])
                 return
             
             n = len(candidates)
             for i in range(start, n):
+                # 1) Check for duplicates.
                 if i > start and candidates[i] == candidates[i-1]:
                     continue
-
+                    
+                # 2) Check if candidates[i] > target.
                 if candidates[i] > target:
                     break
 
+                # 3) Append the candidates to the path.
                 path.append(candidates[i])
+
+                # 4) TRICKY: Call backtrack(), but do it with start -> 'i+1'.
                 backtrack(i+1, target-candidates[i], path)
+
+                # 5) Path has to call pop().
                 path.pop()
-        
+
+        # 6) TRICKY: Call candidates.sort()
         candidates.sort()
         result = []
         backtrack(0, target, [])
