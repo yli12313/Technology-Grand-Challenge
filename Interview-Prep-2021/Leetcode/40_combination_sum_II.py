@@ -62,7 +62,7 @@ class Solution(object):
                 if candidates[i] > target:
                     break
 
-                # 3) Append the candidates to the path.
+                # 3) Append 'candidates[i]' to the path.
                 path.append(candidates[i])
 
                 # 4) TRICKY: Call backtrack(), but do it with start -> 'i+1'.
