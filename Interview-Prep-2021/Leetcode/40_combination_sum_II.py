@@ -28,7 +28,7 @@ class Solution(object):
         # - If target becomes 0, then you append the path to result, which is a variable that
         # you define outside of the backtracking() function. 'return' from the function.
         # - Define a for loop that goes from the start to the length of candidates.
-        # - If 'i>start' and 'cadidates[i] == candidates[i-1]', you found a duplicate and you
+        # - If 'i>start' and 'candidates[i] == candidates[i-1]', you found a duplicate and you
         # continue onto the next value.
         # - If 'candidates[i] > target', you break.
         # - Append candidates[i] -> path.
