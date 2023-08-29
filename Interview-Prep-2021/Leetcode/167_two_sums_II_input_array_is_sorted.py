@@ -90,9 +90,11 @@ class Solution(object):
     n = len(numbers)-1
     l, r = 0, n
 
+    # TRICK: This is a two pointer problem and you do not need to incorporate a for() loop.
     while l<r:
       two_sum = numbers[l]+numbers[r]
 
+      # TRICK: After you calculate 'two_sum', you check if it's equal to 'target' first. 
       if two_sum == target:
         return [l+1,r+1]
       elif two_sum < target:
