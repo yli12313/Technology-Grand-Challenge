@@ -21,7 +21,7 @@ class Solution(object):
         # TC: O(N)
         # SC: O(N)
 
-        # TRICK: 'answer' has to be a string and not a list!
+        # TRICK: 'answer' has to be a string and not a list! Define this return string first.
         answer = ""
 
         for c in s:
