@@ -27,6 +27,7 @@ class Solution(object):
             if c != 'i':
                 answer += c
             elif c == 'i':
+                # TRICK: To reverse a string in python, use '[::-1].
                 answer = answer[::-1]
         
         return answer
