@@ -4,8 +4,8 @@ class Solution(object):
     def finalString(self, s):
         # Constraints
         # - 1 <= s.length <= 100
-        # s consists of lowercase English letters.
-        # s[0] != 'i'
+        # - s consists of lowercase English letters.
+        # - s[0] != 'i'
 
         # Topic: Array.
         # This is a String, Simulation problem.
