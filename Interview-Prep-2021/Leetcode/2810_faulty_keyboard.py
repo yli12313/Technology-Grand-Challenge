@@ -1,3 +1,5 @@
+# LINK: https://leetcode.com/problems/faulty-keyboard/
+
 class Solution(object):
     def finalString(self, s):
         # Constraints
