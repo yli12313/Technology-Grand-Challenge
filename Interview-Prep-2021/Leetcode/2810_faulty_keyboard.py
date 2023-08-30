@@ -10,20 +10,20 @@ class Solution(object):
         # Topic: Array.
         # This is a String, Simulation problem.
 
-        # Approach 1:
-        # - Loop through the array.
-        # - If you encounter i where the index of i is greater than 1, then you reverse the new string.
-        # - Else add the character to the new string. 
-        # - Return the new string.
+         Approach 1:
+        # - Loop through the characters of the string s.
+        # - For each character c in s, if it's not equal to the character 'i', then add it to a return
+        # string.
+        # - If it is the character 'i', then reverse the return string, but don't add 'i' to the return
+        # string.
+        # - Return the answer.
 
         # TC: O(N)
         # SC: O(N)
 
         answer = ""
 
-        for j in range(len(s)):
-            c = s[j]
-
+        for c in s:
             if c != 'i':
                 answer += c
             elif c == 'i':
