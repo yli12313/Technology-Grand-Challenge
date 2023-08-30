@@ -21,6 +21,7 @@ class Solution(object):
         # TC: O(N)
         # SC: O(N)
 
+        # TRICK: 'answer' has to be a string and not a list!
         answer = ""
 
         for c in s:
