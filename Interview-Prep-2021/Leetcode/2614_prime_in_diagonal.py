@@ -16,6 +16,9 @@ class Solution(object):
         # NOTE: The only trick was that I calculated the checkPrime() function wrong! Other than
         # that, I got most of the logic correct!
 
+        # TC: O(N); the checkPrime() function has O(sqrt(N)), this is however a smaller term than O(N).
+        # SC: O(1)
+
         n = len(nums)
 
         max_diag = 0
