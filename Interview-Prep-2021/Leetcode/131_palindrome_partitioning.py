@@ -55,6 +55,8 @@ class Solution(object):
         
         # TRICK: Have to call 'dfs(0)' and 'return res' outside of 'dfs()', but within 
         # 'partition()'.
+        # TRICK2: Make sure this part of the code has the same identation as the dfs()
+        # function.
         dfs(0)
         return res
         
