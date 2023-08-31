@@ -31,7 +31,8 @@ class Solution(object):
 
         # - Define an isPali() function with the signature: 'isPali(self, s, l, r)'.
 
-        # TC: O(N*(2^N)) -> Worst case is 2^N possible palindrome partitions.
+        # TC: O(N*(2^N)) -> Worst case is 2^N possible palindrome partitions and we are checking if
+        # each palindrome is valid in O(N) time.
         # SC: O(N*(2^N)) -> Worst case is 2^N possible palindrome partitions.
 
         """
