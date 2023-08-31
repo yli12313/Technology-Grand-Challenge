@@ -94,6 +94,7 @@ class Solution(object):
                 return
             
             for end in range(start+1, n+1):
+                # TRICK: Make sure to check string parsing is using ':' instead of ','.
                 if is_palindrome(s[start:end]):
                     backtrack(end, path + [s[start:end]])
         
