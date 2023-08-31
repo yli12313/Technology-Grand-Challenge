@@ -97,6 +97,8 @@ class Solution(object):
                 if is_palindrome(s[start:end]):
                     backtrack(end, path + [s[start:end]])
         
+        # TRICK: Define 'res' within the partition function. Maybe move this to the top.
         res = []
+        # TRICK: Call 'backtrack(0,[])' and return the result.
         backtrack(0, [])
         return res
