@@ -37,6 +37,7 @@ class Solution(object):
 
         res,part = [],[]
 
+        # TRICK: Define the dfs() function right here with parameter 'i'.
         def dfs(i):
             n = len(s)
             # TRICK: Check if you can append the partition to the result.
