@@ -46,6 +46,7 @@ class Solution(object):
             # TRICK: This loop is using a new variable 'j' that goes from 'i' -> 'n'.
             for j in range(i, n):
                 if self.isPalid(s, i, j):
+                    # TRICK: You have to append to part 's[i:j+1]'.
                     part.append(s[i:j+1])
                     dfs(j+1)
                     part.pop()
