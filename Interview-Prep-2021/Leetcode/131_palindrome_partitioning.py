@@ -82,7 +82,7 @@ class Solution(object):
         # - Return the result.
 
         # TC: O(N*(N^2)) -> O(N^3) -> Worst case is you make N^2 number of recursive calls.
-        # SC: O(2^N) -> Worst case is 2^N possible palindrome partitions. 
+        # SC: O(N*(2^N)) -> Worst case is 2^N possible palindrome partitions. 
 
         def is_palindrome(s):
             return s == s[::-1]
