@@ -35,7 +35,6 @@ class Solution(object):
         # each palindrome is valid in O(N) time.
         # SC: O(N*(2^N)) -> Worst case is 2^N possible palindrome partitions.
 
-        """
         res,part = [],[]
 
         def dfs(i):
@@ -43,7 +42,8 @@ class Solution(object):
             if i >= n:
                 res.append(part[:])
                 return
-            
+
+            # TRICK: This loop is using a new variable 'j' that goes from 'i' -> 'n'.
             for j in range(i, n):
                 if self.isPalid(s, i, j):
                     part.append(s[i:j+1])
@@ -63,7 +63,6 @@ class Solution(object):
             l,r = l+1,r-1
         
         return True
-        """
 
         # Approach 2 (ChatGPT):
         # - Define an inner function 'is_palindrome(s)' checking if 's == s[::-1].
