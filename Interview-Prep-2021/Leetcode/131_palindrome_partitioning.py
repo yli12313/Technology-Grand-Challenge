@@ -34,6 +34,7 @@ class Solution(object):
         # TC: O(N*(2^N)) -> Worst case is 2^N possible palindrome partitions.
         # SC: O(N*(2^N)) -> Worst case is 2^N possible palindrome partitions.
 
+        """
         res,part = [],[]
 
         def dfs(i):
@@ -61,10 +62,11 @@ class Solution(object):
             l,r = l+1,r-1
         
         return True
+        """
 
         # Approach 2 (ChatGPT):
-        # - Define a function 'is_palindrome(s)' checking if 's == s[::-1].
-        # - Define backtrack function with 'backtrack(start, path):'.
+        # - Define an inner function 'is_palindrome(s)' checking if 's == s[::-1].
+        # - Define an inner backtrack function with 'backtrack(start, path):'.
         # - If start is equal to len(s), then append a copy of 'path' to the 'result' and return.
         # - loop using an end variable from 'start+1' -> 'len(s) + 1'.
         # - If 's[start:end]' is a palindrome, then call backtrack again.
@@ -75,3 +77,20 @@ class Solution(object):
 
         # TC: O(N*(N^2)) -> O(N^3) -> Worst case is you make N^2 number of recursive calls.
         # SC: O(2^N) -> Worst case is 2^N possible palindrome partitions. 
+
+        def is_palindrome(s):
+            return s == s[::-1]
+        
+        def backtrack(start, path):
+            n = len(s)
+            if start == n:
+                res.append(path[:])
+                return
+            
+            for end in range(start+1, n+1):
+                if is_palindrome(s[start:end]):
+                    backtrack(end, path + [s[start:end]])
+        
+        res = []
+        backtrack(0, [])
+        return res
