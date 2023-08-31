@@ -39,6 +39,7 @@ class Solution(object):
 
         def dfs(i):
             n = len(s)
+            # TRICK: Check if you can append the partition to the result.
             if i >= n:
                 res.append(part[:])
                 return
