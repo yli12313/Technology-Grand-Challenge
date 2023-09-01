@@ -32,8 +32,8 @@ class Solution(object):
         # TC: O(N^2)
         # SC: O(1)
         
+        # TRICK: You should define 'n' set the 'ans' to -1.
         n=len(nums)
-        # TRICK: You should set the ans to -1.
         ans = -1
 
         for i in range(n):
