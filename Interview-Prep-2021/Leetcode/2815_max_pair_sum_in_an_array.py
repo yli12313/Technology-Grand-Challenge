@@ -49,6 +49,7 @@ class Solution(object):
         return -1 if ans == -1 else ans
 
     def findMax(self, n):
+        # TRICK: Define 'ans' right here.
         ans = 0
         
         while n > 0:
