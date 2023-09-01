@@ -50,7 +50,7 @@ class Solution(object):
 
     def findMax(self, n):
         # TRICK: Define 'ans' right here.
-        ans = 0
+        ans = -1
         
         while n > 0:
             # REMINDER: 'n%10' will get you the digit that is right-most.
