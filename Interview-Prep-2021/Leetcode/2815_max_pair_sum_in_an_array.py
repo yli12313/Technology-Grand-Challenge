@@ -49,15 +49,15 @@ class Solution(object):
         return -1 if ans == -1 else ans
 
     def findMax(self, n):
-        max_digit = 0
+        ans = 0
         
         while n > 0:
             # REMINDER: 'n%10' will get you the digit that is right-most.
             # REMINDER: 'n/10' will cut the digit that is right-most.
 
             r=n%10
-            max_digit = max(max_digit, r)
+            ans = max(ans, r)
             # TRICK: you have to do 'math.floor(n/10)'.
             n=math.floor(n/10)
         
-        return max_digit
+        return ans
