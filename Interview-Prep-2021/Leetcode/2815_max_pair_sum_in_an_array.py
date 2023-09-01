@@ -46,7 +46,7 @@ class Solution(object):
                     sum=nums[i]+nums[j]
                     ans=max(ans, sum)
         
-        return -1 if ans == 0 else ans
+        return -1 if ans == -1 else ans
 
     def findMax(self, n):
         max_digit = 0
