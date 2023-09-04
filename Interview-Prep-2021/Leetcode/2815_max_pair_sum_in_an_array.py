@@ -7,8 +7,10 @@ class Solution(object):
             # REMINDER: 'n%10' will get you the digit that is right-most.
             # REMINDER: 'n/10' will cut the digit that is right-most.
             r=n%10
-            ans = max(ans, r)
-            # TRICK: you have to do 'math.floor(n/10)'.
+            # TRICK: Make sure you are doing 'max(ans,r)' right here and NOT
+            # 'max(ans,n)'.
+            ans = max(ans,r)
+            # TRICK: You have to do 'math.floor(n/10)'.
             n=math.floor(n/10)
         
         return ans
