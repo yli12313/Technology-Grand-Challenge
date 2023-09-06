@@ -22,6 +22,7 @@ class Solution(object):
         # TC: O(N)
         # SC: O(1)
 
+        """
         ans = 0
         l,r,underscore = 0,0,0
 
@@ -41,17 +42,54 @@ class Solution(object):
             ans = underscore
 
         return ans
+        """
 
         # Approach 2 (Simplifying the approach, but this approach has a far worse
         # time and space complexity):
-        # count,blank = 0,0
 
-        # for m in moves:
-        #     if m == "L":
-        #         count -= 1
-        #     elif m == "R":
-        #         count += 1
-        #     else:
-        #         blank += 1
+        """
+        count,blank = 0,0
 
-        # return abs(count) + blank
+        for m in moves:
+            if m == "L":
+                count -= 1
+            elif m == "R":
+                count += 1
+            else:
+                blank += 1
+
+        return abs(count) + blank
+        """
+
+        # Approach 3 (Same as Approach 1, but without an 'ans' variable):
+        # {L:2, R:2, _:3} -> 3
+        # {L:2, R:1, _:4} -> 2-1+4 -> 5
+        # {_:7} -> 7
+
+        # - Define left, right and underscore variables.
+        # - Loop through the moves.
+        # - For each move m, figure out if it's a left, right, or underscore and update that 
+        # variable.
+        # - If left < right, then return right - left + underscore.
+        # - Else if left > right, left - right + underscore.
+        # - Return underscore.
+
+        # TC: O(N)
+        # SC: O(1)
+
+        left,right,underscore = 0,0,0
+
+        for m in moves:
+            if m == "L":
+                left += 1
+            elif m == "R":
+                right += 1
+            else:
+                underscore += 1
+        
+        if left < right:
+            return right-left+underscore
+        elif left > right:
+            return left-right+underscore
+        
+        return underscore
