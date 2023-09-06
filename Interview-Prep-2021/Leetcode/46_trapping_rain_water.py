@@ -42,6 +42,7 @@ class Solution(object):
           # TRICK: Calculate the 'trapped_water'.
           trapped_water += leftMax - height[left]
 
+        # TRICK: Update left pointer.
         left += 1
       else:
         if rightMax < height[right]:
