@@ -33,7 +33,7 @@ class Solution(object):
 
     # TRICK: Set while() loop to 'left <= right'.
     while left <= right:
-      # TRICK: If the smaller bar is on the left side.
+      # TRICK: If the smaller bar is on the left side, which defines the water level!
       if leftMax < rightMax:
         # TRICK: If the 'leftMax' bar is smaller than the corrent 'height[left]', update leftMax.
         if leftMax < height[left]:
