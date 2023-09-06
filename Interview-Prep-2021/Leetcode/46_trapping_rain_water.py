@@ -45,6 +45,7 @@ class Solution(object):
         # TRICK: Update left pointer.
         left += 1
       else:
+        # TRICK: Use the principle of symmetry right here! Check if 'rightMax' is less than 'height[right]'.
         if rightMax < height[right]:
           rightMax = height[right]
         else:
