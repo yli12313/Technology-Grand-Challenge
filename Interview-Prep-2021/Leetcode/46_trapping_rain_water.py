@@ -21,19 +21,25 @@ class Solution(object):
     # You know this is good practice for me!
 
     n = len(height)
-
+    
+    # TRICK: Set the leftMax, rightMax, left (pointer), right (pointer).
     leftMax = height[0]
     rightMax = height[n-1]
     left = 1
     right = n-2
 
+    # TRICK: Set 'trapped_water' variable to 0.
     trapped_water = 0
 
+    # TRICK: Set while() loop to 'left <= right'.
     while left <= right:
+      # TRICK: If the smaller bar is on the left side.
       if leftMax < rightMax:
+        # TRICK: If the 'leftMax' bar is smaller than the corrent 'height[left]', update leftMax.
         if leftMax < height[left]:
           leftMax = height[left]
         else:
+          # TRICK: Calculate the 'trapped_water'.
           trapped_water += leftMax - height[left]
 
         left += 1
