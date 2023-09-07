@@ -19,23 +19,15 @@ class Solution(object):
         # - Using heaps and queues is the better way.
 
         # Approach 2 (NeetCode):
-        # - Create 'Counter(tasks)' that is a collection of the frequenices of values found
-        # in 'tasks'. Save in a variable.
-        # - Create a list of the negatives of the counts in the step above. Save in a variable.
-        # - Heapify the max heap created in the step above.
-        # - Declare time variable.
-        # - Create queue using the 'deque()' data structure.
-        # - Define a while() loop that activates while maxHeap or queue.
-        # - Increment the time variable.
-
-        # (Processing the maxHeap)
-        # - If maxHeap, do 'cnt = 1 + heapq.heappop(maxHeap)'.
-        # - If cnt, then do 'q.append([cnt, time+n])'.
-
-        # (Processing the queue)
-        # - If queue and 'queue[0][1] == time', then do a 'heapq.heappush(maxHeap, queue.popLeft()[0])'.
-
-        # Return the time.
+        # - Define a max heap that will hold the count of all the tasks, grouped by task types.
+        # - Define a time variable that will serve as the answer.
+        # - Define a priority queue that will hold: [count, time].
+        # - While the maxHeap and the priority queue are not empty, do the following:
+        # - 1) Update the maxHeap and see if any tasks are executed. If so, move the task into the
+        # priority queue.
+        # - 2) Update the priority queue when a task as reached the end of it's cool down period, and if
+        # there are still tasks of the same type, move the task counts back to the maxHeap. 
+        # - Return the time, which is the answer.
 
         # Working with the MaxHeap is O(log(N)) -> O(log(26)).
         # TC: O(N*M)
@@ -55,6 +47,7 @@ class Solution(object):
             time += 1
 
             if max_heap:
+                # TRICK: The syntax here is '1+heapq.heappop(max_heap)'.
                 cnt = 1+heapq.heappop(max_heap)
                 if cnt:
                     queue.append([cnt, time+n])
