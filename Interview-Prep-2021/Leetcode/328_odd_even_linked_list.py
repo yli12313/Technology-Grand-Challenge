@@ -14,16 +14,17 @@ class Solution(object):
         # Topic: LinkedList
 
         # Approach 1:
-        # - If head is None, return None.
-        # - Define odd (o), even (e), evenHead (eHead).
-        # - Loop while e and eHead are not None.
-        # - Update o.next, o, e.next, e.
-        # - Update o.next.
-        # - return head.
+        # - Check that if head is None, then return None.
+        # - Define odd, even, and evenHead pointers.
+        # - Do a while() loop that continues to run as long as even and even.next IS NOT None.
+        # - Update the pointers in the following order: odd.next, odd, even.next, even.
+        # - Assign odd.next to evenHead.
+        # - Return head.
 
         # TC: O(N)
         # SC: O(1)
 
+        # TRICK: Have to put the 'head == None' check at the beginning!
         if head == None:
             # TRICK: Return None here, and not False.
             return None
@@ -33,7 +34,7 @@ class Solution(object):
         eHead = e
 
         while e != None and e.next != None:
-            # TRICK: The order is: o.next, o, e.next, e.
+            # TRICK: The order is: 1) o.next, 2) o, 3) e.next, 4) e.
             o.next = e.next
             o = o.next
             e.next = o.next
