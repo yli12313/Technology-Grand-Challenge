@@ -76,8 +76,11 @@ class Solution(object):
             # TRICK: Make sure to update the right pointer.
             r += 1
             # TRICK: Make sure this condition is correct: 'r != m'.
+            # TRICK: (Writing this again) Make sure this condition is correct: 'r != m'.
             if r != m:
+                # TRICK: Addition operation on l2 using 'r'.
                 l2[ord(s2[r])-ord('a')] += 1
+            # TRICK: Subtraction operation on l2 using 'l'.
             l2[ord(s2[l])-ord('a')] -= 1
             # TRICK: Make sure that you increment the left pointer.
             l += 1
