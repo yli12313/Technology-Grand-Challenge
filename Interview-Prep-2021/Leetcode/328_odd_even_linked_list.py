@@ -11,7 +11,7 @@ class Solution(object):
         # - The number of nodes in the linked list is in the range [0,10^4].
         # - -10^6 <= Node.val <= 10^6
 
-        # Topic: LinkedList
+        # Topic: Linked List
 
         # Approach 1:
         # - Check that if head is None, then return None.
