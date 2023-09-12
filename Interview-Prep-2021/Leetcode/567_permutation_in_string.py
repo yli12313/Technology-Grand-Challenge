@@ -73,6 +73,7 @@ class Solution(object):
         while r<m:
             if l1 == l2:
                 return True
+            # TRICK: Make sure to update the right pointer.
             r += 1
             # TRICK: Make sure this condition is correct: 'r != m'.
             if r != m:
