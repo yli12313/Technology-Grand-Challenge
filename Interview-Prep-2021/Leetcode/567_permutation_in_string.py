@@ -31,22 +31,24 @@ class Solution(object):
         return False
         """
 
-        # Approach 2 (Found on YouTube):
-        # - Define two lists (l1 and l2) and define the length of 's1' (n) and 
-        # 's2' (m).
-        # - If the length of 's1' is greater than the length of 's2', return False.
-        # - Define the sliding window pointers left (l), right (r) and set them both to 0.
-        # - Using a while() loop, loop while the right pointer is less than n.
-        # - Update lists and increase pointer.
-        # - Decrease pointer to point to the end of the sliding window.
-        # - Using a while() loop, loop while the right pointer is less than m.
-        # - If l1 equals l2, return True.
-        # - Increment the right pointer. 
-        # - If l1 does not equal l2, update the second dictionary with the right pointer (+1).
-        # - Update the second dictionary with the left pointer (-1); this is outside the if
-        # statement.
-        # - Increment the left pointer.
-        # - Return False; this is outside the while() loop.
+        # Approach 1:
+        # - Define two lists that are of length 26 (l1, l2) and populated with 0s.
+        # - Define variables to hold the length of s1 (n) and s2 (m).
+        # - Define pointers l,r that are both set to 0.
+        # - If n > m, return False.
+        # - Define a while() loop that loops from r<n.
+        # - Update the character frequencies for l1 and l2.
+        # - Increase the r pointer.
+        # - Outside the while() loop, decrease the r pointer.
+        # - While r<m, go into another while() loop.
+        # - If l1 and l2 are equal, the return true.
+        # - Increment the right pointer.
+        # - If r is not equal to m, then update the list l2 using the right pointer to increment 
+        # the frequency of the character encountered.
+        # - Update the list l2 using the left pointer to decrement the frequency of the left-most 
+        # character in the sliding window.
+        # - Increment the left pointer by 1.
+        # - Return False. 
 
         # TC: O(26*N)
         # SC: O(1); the lists used have a fixed size of 26. The amount of memory used by the 
