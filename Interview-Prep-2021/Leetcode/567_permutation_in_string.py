@@ -65,6 +65,7 @@ class Solution(object):
         n,m = len(s1),len(s2)
         l,r = 0,0
 
+        # TRICK: Don't forget this check!
         if n>m:
             return False
 
