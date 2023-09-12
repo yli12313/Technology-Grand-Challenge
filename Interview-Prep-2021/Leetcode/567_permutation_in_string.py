@@ -52,8 +52,10 @@ class Solution(object):
         # SC: O(1); the lists used have a fixed size of 26. The amount of memory used by the 
         # algorithm is constant, regardless of the input size.
 
-        # NOTE: (DICTIONAIRES) When you compare two dictionaries in Python using '==', it 
+        # NOTE: 
+        # - (DICTIONAIRES) When you compare two dictionaries in Python using '==', it 
         # checks if the key-value pairs of the two dictionaires are equal. 
+        # - (ANAGRAMS): When you have anagrams, think hash tables and frequency tables!
         
         # TRICK: Making this lists is what makes the problem easier. You need
         # to write more code if you do not work with lists.
