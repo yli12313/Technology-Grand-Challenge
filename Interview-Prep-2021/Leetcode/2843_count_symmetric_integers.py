@@ -27,7 +27,7 @@ class Solution(object):
 
         high = high+1
         for i in range(low,high):
-            _string = str(i)
+            i_string = str(i)
             n = len(i_string)
             
             if n%2 != 0:
