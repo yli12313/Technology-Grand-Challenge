@@ -34,7 +34,7 @@ class Solution(object):
                 continue
             else:
                 # TRICK: When dividing by 2, it's always a good idea to cast to int()!
-                m = int(m/2)
+                m = int(n/2)
                 
                 if self.get_sum(n_string[:m]) == self.get_sum(n_string[m:]):
                     count += 1
