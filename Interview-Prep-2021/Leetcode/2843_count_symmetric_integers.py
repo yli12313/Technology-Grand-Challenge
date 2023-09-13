@@ -8,16 +8,15 @@ class Solution(object):
         # Topic: Math, Enumeration
 
         # Approach 1:
-        # - We know that we are given '[low,high]', so the range that we are looking over for
-        # the symmetric integers is inclusive of low,high.
-        # - Define count to hold the answer.
-        # - Loop through the given range.
-        # - Convert the number into string.
-        # - If the string is of odd length, it can't be a symmetric integer.
-        # - If it's even, check if the sum of the digits in the first half equals the sum of 
-        # the digits in the  second half of the string.
-        # - If so, increment count.
-        # - Return count.
+        # - Define a variable count that will store the answer: the number of symmetric integers found.
+        # - Loop through low -> high, inclusive of the endpoint values.
+        # - Convert each number in the iteration to a string.
+        # - If the string has an odd number of digits, continue.
+        # - Else, call a helper function that will calculate the sum of digits on the left and right split 
+        # of the string. 
+        # - If the sum of the digits on the left and the right split of the string is equal, increase the 
+        # variable count (+1).
+        # - Return the count. 
 
         # TC: O(N*M)
         #   - N is the number of integers we are iterating over.
@@ -26,16 +25,18 @@ class Solution(object):
 
         count = 0
 
-        n = high+1
-        for i in range(low,n):
-            n_string = str(i)
-            m = len(n_string)
-            if m%2 != 0:
+        high = high+1
+        for i in range(low,high):
+            _string = str(i)
+            n = len(i_string)
+            
+            if n%2 != 0:
                 continue
             else:
                 # TRICK: When dividing by 2, it's always a good idea to cast to int()!
-                o = int(m/2)
-                if self.get_sum(n_string[:o]) == self.get_sum(n_string[o:]):
+                m = int(m/2)
+                
+                if self.get_sum(n_string[:m]) == self.get_sum(n_string[m:]):
                     count += 1
 
         return count
