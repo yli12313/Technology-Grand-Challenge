@@ -10,19 +10,21 @@ class Solution(object):
         # Approach 1:
         # - We know that we are given '[low,high]', so the range that we are looking over for
         # the symmetric integers is inclusive of low,high.
-        # - Define list to hold the answers.
-        # - Loop through the give range.
+        # - Define count to hold the answer.
+        # - Loop through the given range.
         # - Convert the number into string.
         # - If the string is of odd length, it can't be a symmetric integer.
-        # - If it's even, check if the first half's sum equals the second half's sum of the 
-        # string.
-        # - If so, add the digit to the answer list.
-        # - Return the length of the answer.
+        # - If it's even, check if the sum of the digits in the first half equals the sum of 
+        # the digits in the  second half of the string.
+        # - If so, increment count.
+        # - Return count.
 
-        # TC: O(N)
-        # SC: ?
+        # TC: O(N*M)
+        #   - N is the number of integers we are iterating over
+        #   - M is the number of digits in the longest integer.
+        # SC: O(1)
 
-        ans = []
+        count = 0
 
         n = high+1
         for i in range(low,n):
@@ -33,9 +35,9 @@ class Solution(object):
             else:
                 o = int(m/2)
                 if self.get_sum(n_string[:o]) == self.get_sum(n_string[o:]):
-                    ans.append(i)
+                    count += 1
 
-        return len(ans)
+        return count
     
     def get_sum(self, n):
         ans = 0
