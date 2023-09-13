@@ -33,6 +33,7 @@ class Solution(object):
             if m%2 != 0:
                 continue
             else:
+                # TRICK: When dividing by 2, it's always a good idea to cast to int()!
                 o = int(m/2)
                 if self.get_sum(n_string[:o]) == self.get_sum(n_string[o:]):
                     count += 1
