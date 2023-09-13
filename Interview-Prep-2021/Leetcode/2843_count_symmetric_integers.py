@@ -42,6 +42,7 @@ class Solution(object):
         return count
     
     def get_sum(self, n):
+        # TRICK: Make sure to define an 'ans' variable if you need one!
         ans = 0
         for d in n:
             d = int(d)
