@@ -19,6 +19,9 @@ class Solution(object):
         # - If so, add the digit to the answer list.
         # - Return the length of the answer.
 
+        # TC: O(N)
+        # SC: ?
+
         ans = []
 
         n = high+1
