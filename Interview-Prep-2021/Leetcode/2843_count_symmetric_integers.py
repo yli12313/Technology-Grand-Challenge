@@ -20,7 +20,7 @@ class Solution(object):
         # - Return count.
 
         # TC: O(N*M)
-        #   - N is the number of integers we are iterating over
+        #   - N is the number of integers we are iterating over.
         #   - M is the number of digits in the longest integer.
         # SC: O(1)
 
