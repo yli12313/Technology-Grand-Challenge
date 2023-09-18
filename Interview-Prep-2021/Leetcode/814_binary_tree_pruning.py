@@ -29,7 +29,8 @@ class Solution(object):
 
         if root is None:
             return None
-        
+
+        # TRICK: When you are doing recursion, you are updating 'root.left' and 'root.right'.
         root.left = self.pruneTree(root.left)
         root.right = self.pruneTree(root.right)
         if root.val == 0 and root.left == None and root.right == None:
