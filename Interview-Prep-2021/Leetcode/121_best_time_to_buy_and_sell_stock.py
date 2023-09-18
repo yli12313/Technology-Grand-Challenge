@@ -12,8 +12,8 @@ class Solution(object):
         # at the end.
         # - Define l,r pointers that are 0,1.
         # - Loop through the prices list while r < len(prices).
-        # - If we found that yesterday's prices is less than today's price, see if we update the
-        # max profit.
+        # - If we found that yesterday's prices is less than today's price, see if we need to 
+        # update the max profit.
         # - Else, set l equal to r.
         # - Return the answer.
 
@@ -32,4 +32,4 @@ class Solution(object):
             
             r += 1
         
-        return max_profit    
+        return max_profit
