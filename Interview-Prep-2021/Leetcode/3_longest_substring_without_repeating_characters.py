@@ -2,6 +2,12 @@
 
 class Solution(object):
   def lengthOfLongestSubstring(self, s):
+
+    # TC: O(N): Both pointers traverse the string once.
+    # SC: O(min(N,M))
+    #   - N is the length of the input string 's'.
+    #   - M is the number of unique characters in the string.
+    
     # Set the two pointers, the dictionary to keep track of the longest substring, and 
     # the curren maximum substring length.
     i = 0
