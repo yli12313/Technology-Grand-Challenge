@@ -1,5 +1,6 @@
 
 **<ins>Update (Wed. 9/20/23; 12:47 AM EST)</ins>**: 
+
 ![image](https://github.com/yli12313/Technology-Grand-Challenge/assets/7104719/b6fff212-93a4-4716-b317-2ee00082e045)
 
 Really good list of problem solving techniques!
