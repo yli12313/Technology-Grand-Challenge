@@ -13,7 +13,7 @@ class Solution(object):
     # - Define an ans variable, left and right pointers, and a dictionary
     # to hold the current substring.
     # - Loop while the right pointer is less than the length of string 's'.
-    # - If the character encounted is NOT in the dictionary:
+    # - If the character encountered is NOT in the dictionary:
     #   - Add the current character to the dictionary.
     #   - Calculate the max substring w/o repeating characters, and update
     #   the value if we've found a new max.
