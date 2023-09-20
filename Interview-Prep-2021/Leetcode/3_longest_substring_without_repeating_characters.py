@@ -36,12 +36,13 @@ class Solution(object):
 
     # TRICK: While the second pointer is still in play, keep looping.
     while j < len(s):
+      c = s[j]
       
       # TRICK: If a new character is found starting at index 0, add it to the dictionary.
       # Increase the second pointer and calculate the length of the  current longest
       # substring.
-      if s[j] not in dic.keys():
-        dic[s[j]] = 1
+      if c not in dic.keys():
+        dic[c] = 1
         j += 1
         distance = len(dic)
         max_substring = max(distance, max_substring)
@@ -52,7 +53,8 @@ class Solution(object):
       # The duplicate found is special because it could be part of the longest substring 
       # for another substring that beyond the first substring. Increase the first pointer.
       else:
-        dic.pop(s[i])
+        c = s[i]
+        dic.pop(c)
         i += 1
     
     # TRICK: Return the length of the maximum longest substring.
