@@ -3,6 +3,26 @@
 class Solution(object):
   def lengthOfLongestSubstring(self, s):
 
+    # Constraints
+    # - 0 <= s.length <= 5 * 10^4
+    # - s consists of English letters, digits, symbols and spaces.
+
+    # Topic: Two Pointers (Tortoise and Hare)
+    # This is a Hash Table, String, or Sliding Window problem.
+
+    # Approach 1:
+    # - Define an ans variable, left and right pointers, and a dictionary
+    # to hold the current substring.
+    # - Loop while the right pointer is less than the length of string 's'.
+    # - If the character encounted is NOT in the dictionary:
+    #   - Add the current character to the dictionary.
+    #   - Calculate the max substring w/o repeating characters, and update
+    #   the value if we've found a new max.
+    #   - Increase the right pointer.
+    # - Else, Pop the value from the dictionary using the left pointer. In-
+    # crease the left pointer.
+    # - Return the answer.
+
     # TC: O(N): Both pointers traverse the string once.
     # SC: O(min(N,M))
     #   - N is the length of the input string 's'.
