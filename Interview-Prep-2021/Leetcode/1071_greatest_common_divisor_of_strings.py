@@ -5,20 +5,20 @@ class Solution(object):
     # Approach 1:
 
     # Properties:
-    # 1) 't divides s' => 's = t + ... + t'
+    # - 't divides s' => 's = t + ... + t'
 
     # Rules of Modulo:
-    # 1) smaller number % bigger number => smaller number
-    # 2) bigger number % smaller number => smaller number | bigger number when you look at division => (bigger number)/(smaller number)
-    # 3) any number % 0 => (any number)/(0) => ZeroDivisionError
+    # - smaller number % bigger number => smaller number
+    # - bigger number % smaller number => smaller number | bigger number when you look at division => (bigger number)/(smaller number)
+    # - any number % 0 => (any number)/(0) => ZeroDivisionError
 
     # Algorithm:
-    # 1) Define the gcd function that returns the length of the gcd.
-    # 2) Invoke the gcd function.
-    # 3) Check if str1 == str2.
-    # 4) Check if str1[:common_length] == str2[:common_length].
-    # 5) If so, return the answer. 
-    # 6) Return "" by default. 
+    # - Define the gcd function that returns the length of the gcd.
+    # - Invoke the gcd function.
+    # - Check if str1 == str2.
+    # - Check if str1[:common_length] == str2[:common_length].
+    # - If so, return the answer. 
+    # - Return "" by default. 
 
     # TC: O(len1 + len2)
 
