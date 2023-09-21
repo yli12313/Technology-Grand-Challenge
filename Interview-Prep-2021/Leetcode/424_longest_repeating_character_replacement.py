@@ -42,6 +42,8 @@ class Solution(object):
             counts[ord(c)-ord('A')] += 1
             longest = max(longest, counts[ord(c)-ord('A')])
 
+            # TRICK: This is calculating the number of characters we have to change in the 
+            # sliding window. We are checking if this is greater than 'k'.
             while r-l-longest+1 > k:
                 c1 = s[l]
                 counts[ord(c1)-ord('A')] -= 1
