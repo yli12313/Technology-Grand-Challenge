@@ -38,6 +38,8 @@ class Solution(object):
         longest = 0
         ans = 0
 
+        # TRICK: Because we are using a for() loop, we do NOT need to increment r
+        # itself.
         for r in range(0,n):
             c = s[r]
             counts[ord(c)-ord('A')] += 1
@@ -53,7 +55,8 @@ class Solution(object):
                 c1 = s[l]
                 counts[ord(c1)-ord('A')] -= 1
                 l += 1
-            
+
+            # TRICK: It's 'r-l+1'!
             ans = max(ans, r-l+1)
 
         return ans
