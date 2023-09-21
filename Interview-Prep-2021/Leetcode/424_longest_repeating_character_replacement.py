@@ -47,6 +47,8 @@ class Solution(object):
             # TRICK: We need to '+1' for the new character that we added to the sliding window
             # in every iteration of the for() loop.
             while r-l-longest+1 > k:
+                # TRICK: When the condition 'r-l-longest+1 > k' is met, it's time to update
+                # the left side of the sliding window.
                 c1 = s[l]
                 counts[ord(c1)-ord('A')] -= 1
                 l += 1
