@@ -6,7 +6,7 @@ class Solution(object):
     # - 0 <= s.length <= 5 * 10^4
     # - s consists of English letters, digits, symbols and spaces.
 
-    # Topic: Two Pointers (Tortoise and Hare)
+    # Topic: Sliding Window
     # This is a Hash Table, String, or Sliding Window problem.
 
     # Approach 1:
