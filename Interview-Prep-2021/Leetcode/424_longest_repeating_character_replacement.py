@@ -29,7 +29,7 @@ class Solution(object):
         # - Update the answer using the max function and the logic 'right-left+1'.
         # - Return the answer.
 
-        # Approach 1 (My own try):
+        # Approach 2 (My own try):
         # - Define left pointer and set them at 0.
         # - Define a counts list that will count the frequencies of each character
         # encountered.
