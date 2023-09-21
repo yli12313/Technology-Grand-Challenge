@@ -73,6 +73,8 @@ class Solution(object):
                 # TRICK: When the condition 'r-l-longest+1 > k' is met, it's time to update
                 # the left side of the sliding window.
                 c1 = s[l]
+                # TRICK: Make sure you are '-1' here! Don't take shortcuts and assume your code
+                # will work!
                 counts[ord(c1)-ord('A')] -= 1
                 l += 1
 
