@@ -9,8 +9,8 @@ class Solution(object):
 
         # Topic: Sliding Window
         # This is a Hash Table, String, or Sliding Window problem.
-        # TRICK: In this problem, the Hash Table was a list of size 26 that maps the 
-        # uppercase English character set! This was NOT a dictionary!
+        # TRICK: In this problem, the Hash Table was a list of size 26 that maps to the 
+        # uppercase English character set! This DID NOT use a dictionary as a Hash Table!
 
         # Approach 1 (Documenting YouTube code):
         # - Define variable to store the length of s.  
