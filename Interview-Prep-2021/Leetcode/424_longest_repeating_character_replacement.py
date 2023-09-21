@@ -45,7 +45,7 @@ class Solution(object):
         # - If so, update the count of the left pointer by '-1' in the list of size 26.
         # - Increase the left pointer.
         # - Update the ans and see if we have a new answer.
-        # - Increase the right pointer.
+        # - Return the ans variable.
 
         # TC: O(N)
         # SC: O(1)
