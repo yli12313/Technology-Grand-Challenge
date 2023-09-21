@@ -8,8 +8,9 @@ class Solution(object):
         # - 0 <= k <= s.length
 
         # Topic: Sliding Window
+        # This is a Hash Table, String, or Sliding Window problem.
 
-        # Approach 1:
+        # Approach 1 (Documenting YouTube code):
         # - Define variable to store the length of s.  
         # - Define list of size 26 to store the variable counts.
         # - Set left and right pointers to the first character.
@@ -27,6 +28,22 @@ class Solution(object):
         #   - Increment the left pointer.
         # - Update the answer using the max function and the logic 'right-left+1'.
         # - Return the answer.
+
+        # Approach 1 (My own try):
+        # - Define left pointer and set them at 0.
+        # - Define a counts list that will count the frequencies of each character
+        # encountered.
+        # - Define a variable that will keep track of the consecutive count of the same
+        # character.
+        # - Define an ans variable and return it.
+        # - Loop using a for() loop from right = 0 to the end of the string 's'.
+        # - Update the count of the characters encountered in the list of size 26.
+        # - Update the variable that keeps track of the consecutive count of the same character.
+        # - See if we can perform an operation to change one of the characters.
+        # - If so, update the count of the left pointer by '-1' in the list of size 26.
+        # - Increase the left pointer.
+        # - Update the ans and see if we have a new answer.
+        # - Increase the right pointer.
 
         # TC: O(N)
         # SC: O(1)
