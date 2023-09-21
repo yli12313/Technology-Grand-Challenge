@@ -8,6 +8,8 @@ class Solution(object):
 
     # Topic: Sliding Window
     # This is a Hash Table, String, or Sliding Window problem.
+    # TRICK: In this problem, the Hash Table was a list of size 26 that maps the 
+    # uppercase English character set! This was NOT a dictionary!
 
     # Approach 1:
     # - Define an ans variable, left and right pointers, and a dictionary
