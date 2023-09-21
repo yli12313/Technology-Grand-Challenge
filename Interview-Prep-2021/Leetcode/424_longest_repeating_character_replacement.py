@@ -52,6 +52,7 @@ class Solution(object):
 
         n = len(s)
         # TRICK: This is a list of size 26 populated by all 0s!
+        # TRICK: Don't forget to define this please. This should be defined right away.
         counts = [0]*26
         l = 0
         longest = 0
