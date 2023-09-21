@@ -44,6 +44,8 @@ class Solution(object):
 
             # TRICK: This is calculating the number of characters we have to change in the 
             # sliding window. We are checking if this is greater than 'k'.
+            # TRICK: We need to '+1' for the new character that we added to the sliding window
+            # in every iteration of the for() loop.
             while r-l-longest+1 > k:
                 c1 = s[l]
                 counts[ord(c1)-ord('A')] -= 1
