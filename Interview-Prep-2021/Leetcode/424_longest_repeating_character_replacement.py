@@ -60,9 +60,11 @@ class Solution(object):
 
         # TRICK: Because we are using a for() loop, we do NOT need to increment r
         # itself.
+        # TRICK: We DO NOT need to increment the right pointer in the for() loop.
         for r in range(0,n):
             c = s[r]
             counts[ord(c)-ord('A')] += 1
+            # TRICK: Calculate longest using 'max(longest, counts[ord(c)-ord('A')])'.
             longest = max(longest, counts[ord(c)-ord('A')])
 
             # TRICK: This is calculating the number of characters we have to change in the 
