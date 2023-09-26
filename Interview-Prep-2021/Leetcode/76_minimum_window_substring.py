@@ -42,6 +42,9 @@ class Solution(object):
         # - Do 'l,r = res'.
         # - Return 's[l:r+1]' if 'resLen != float("infinity")' else ''.
 
+        # TC: O(N)
+        # SC: 
+
         if t == "":
             return ""
 
