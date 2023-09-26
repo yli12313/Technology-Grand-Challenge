@@ -43,7 +43,7 @@ class Solution(object):
         # - Return 's[l:r+1]' if 'resLen != float("infinity")' else ''.
 
         # TC: O(N)
-        # SC: 
+        # SC: O(S+T); S is the length of the input string 's', and T is the length of the input string 't'.
 
         if t == "":
             return ""
