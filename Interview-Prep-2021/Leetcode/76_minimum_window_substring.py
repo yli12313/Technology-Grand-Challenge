@@ -32,8 +32,8 @@ class Solution(object):
         #   - res = [l,r]
         #   - resLen = r-l+1
         # - Pop from the left of our window. 
-        #   - c = s[l]
-        #   - window[c] -= 1
+        # - c = s[l]
+        # - window[c] -= 1
         # - If 'c in countT' and 'window[c] < countT[c]', do the following:
         #   - have -= 1
         # - Increment 'l' by +1.
