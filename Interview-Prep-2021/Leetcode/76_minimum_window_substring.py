@@ -68,7 +68,7 @@ class Solution(object):
             if c in countT and window[c] == countT[c]:
                 have += 1
 
-            # TRICK: When the 'have == need' condition is met!
+            # TRICK: When the 'have == need' condition is met! Make sure this is a while() loop!
             while have == need:
                 # TRICK: 1) Update 'res' and 'resLen'.
                 if (r-l+1) < resLen:
@@ -76,7 +76,7 @@ class Solution(object):
                     resLen = r-l+1
                     
                 # TRICK: 2-Part 1) Make sure you get this part right! 'window[c] -= 1', where 'c = s[l]'.
-                # TRICK: 2-Part 2) Update left portion of the sliding window.
+                # TRICK: 2-Part 2) Update left portion of the sliding window. Decrement the character
                 c = s[l]
                 window[c] -= 1
 
