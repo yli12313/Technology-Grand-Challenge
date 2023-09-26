@@ -63,6 +63,7 @@ class Solution(object):
 
             # TRICK: Upate window.
             c = s[r]
+            # TRICK: Make show when you update window, you get the syntax correct!
             window[c] = 1+window.get(c,0)
 
             # TRICK: Update the have variable. Both if statements update the have variable!
@@ -70,6 +71,7 @@ class Solution(object):
                 have += 1
 
             # TRICK: When the 'have == need' condition is met! Make sure this is a while() loop!
+            # TRICK: Make sure this is a while() loop! (x2)
             while have == need:
                 # TRICK: 1) Update 'res' and 'resLen'.
                 if (r-l+1) < resLen:
