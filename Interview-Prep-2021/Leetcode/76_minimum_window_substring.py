@@ -90,3 +90,62 @@ class Solution(object):
             
         l,r = res
         return s[l:r+1] if resLen != float("infinity") else ""
+
+        # Approach 1 (From YouTube):
+        # - If t is an empty string, then return the empty string.
+        # - Define two dictionaires countT and Window.
+        # - Populate the countT dictionary.
+        # - Define variables have and need.
+        # - define variables res, resultLen.
+        # - Define a left pointer.
+
+        # - Define a for() loop that goes up to len(s).
+        # - Add new values to the window. 
+        # - Check to see if the character that we just added to the window 
+        # is one that we want. If so, update have.
+        # - Do a while loop when have == need.
+        # - Update res and resLen.
+        # - Update the left side of the sliding window and subtract the character 
+        # that the left pointer points to.
+        # - Do another check to see if we need to update have.
+        # - Increment the left pointer.
+
+        # TC: O(N)
+        # SC: O(S+T); S is the length of the input string 's', and T is the length of the input string 't'.
+
+        """
+        if t == "":
+            return ""
+        
+        countT,window = {},{}
+
+        for c in t:
+            countT[c] = 1+countT.get(c,0)
+        
+        have,need = 0,len(countT)
+        res,resLen = [-1,-1],float("infinity")
+        l = 0
+
+        for r in range(len(s)):
+            c = s[r]
+            window[c] = 1+window.get(c,0)
+
+            if c in countT and window[c] == countT[c]:
+                have += 1
+            
+            while have == need:
+                if (r-l+1) < resLen:
+                    res = [l,r]
+                    resLen = r-l+1
+                
+                c = s[l]
+                window[c] -= 1
+
+                if c in countT and window[c] < countT[c]:
+                    have -= 1
+                
+                l += 1
+
+        l,r = res
+        return s[l:r+1] if resLen != float("infinity") else ""
+        """
