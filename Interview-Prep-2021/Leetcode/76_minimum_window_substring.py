@@ -70,14 +70,17 @@ class Solution(object):
 
             # TRICK: When the 'have == need' condition is met!
             while have == need:
-                # TRICK: Update 'res' and 'resLen'.
+                # TRICK: 1) Update 'res' and 'resLen'.
                 if (r-l+1) < resLen:
                     res = [l,r]
                     resLen = r-l+1
-                # TRICK: Make sure you get this part right! 'window[c] -= 1', where 'c = s[l]'.
-                # TRICK: Update left portion of the sliding window.
+                    
+                # TRICK: 2-Part 1) Make sure you get this part right! 'window[c] -= 1', where 'c = s[l]'.
+                # TRICK: 2-Part 2) Update left portion of the sliding window.
                 c = s[l]
                 window[c] -= 1
+
+                # TRICK: 3) Update have and left pointer.
                 if c in countT and window[c] < countT[c]:
                     have -= 1
                 l += 1
