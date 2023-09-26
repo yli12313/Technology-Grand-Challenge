@@ -96,7 +96,7 @@ class Solution(object):
         # - Define two dictionaires countT and Window.
         # - Populate the countT dictionary.
         # - Define variables have and need.
-        # - define variables res, resultLen.
+        # - define variables res, resLen.
         # - Define a left pointer.
 
         # - Define a for() loop that goes up to len(s).
