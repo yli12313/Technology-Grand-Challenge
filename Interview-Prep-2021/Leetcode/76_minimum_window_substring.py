@@ -38,7 +38,7 @@ class Solution(object):
         #   - have -= 1
         # - Increment 'l' by +1.
 
-        # - This is outside the while() loop.
+        # - This is outside the while() loop in the body of minWindow itself.
         # - Do 'l,r = res'.
         # - Return 's[l:r+1]' if 'resLen != float("infinity")' else ''.
 
