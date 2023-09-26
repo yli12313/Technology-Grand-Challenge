@@ -58,17 +58,23 @@ class Solution(object):
         l = 0
 
         for r in range(len(s)):
+
+            # TRICK: Upate window.
             c = s[r]
             window[c] = 1+window.get(c,0)
 
+            # TRICK: Update the have variable.
             if c in countT and window[c] == countT[c]:
                 have += 1
-            
+
+            # TRICK: When the 'have == need' condition is met!
             while have == need:
+                # TRICK: Update 'res' and 'resLen'.
                 if (r-l+1) < resLen:
                     res = [l,r]
                     resLen = r-l+1
                 # TRICK: Make sure you get this part right! 'window[c] -= 1', where 'c = s[l]'.
+                # TRICK: Update left portion of the sliding window.
                 c = s[l]
                 window[c] -= 1
                 if c in countT and window[c] < countT[c]:
