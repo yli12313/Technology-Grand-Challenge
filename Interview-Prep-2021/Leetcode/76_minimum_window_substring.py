@@ -53,7 +53,8 @@ class Solution(object):
         for c in t:
             countT[c] = 1+countT.get(c,0)
 
-        # TRICK: Define 'have','need' as '0','len(countT)'.
+        # TRICK: Define 'have','need' as '0','len(countT)'. 'have' should be 0 and 'need' should have
+        # a value right away!
         have,need = 0,len(countT)
         res,resLen = [-1,-1],float("infinity")
         l = 0
