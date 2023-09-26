@@ -64,7 +64,7 @@ class Solution(object):
             c = s[r]
             window[c] = 1+window.get(c,0)
 
-            # TRICK: Update the have variable.
+            # TRICK: Update the have variable. Both if statements update the have variable!
             if c in countT and window[c] == countT[c]:
                 have += 1
 
