@@ -44,32 +44,33 @@ class Solution(object):
         # SC: O(K), where K is the size of the sliding window.
         
         n = len(nums)
-        result = [0] * (n-k+1)
+        res = [0]*(n-k+1)
         # TRICK: Make sure you define the deque and the limit, where the limit is
         # 'limit = k-1'.
         deque = []
         limit = k-1
 
-        for i in range (0, limit):
+        for i in range(0,limit):
             val = nums[i]
-            while not len(deque) == 0 and nums[deque[-1]] < val:
+            while deque and nums[deque[-1]] < val:
                 deque.pop()
             deque.append(i)
-
-        for i in range(limit, n):
+        
+        for i in range(limit,n):
             val = nums[i]
             while deque and nums[deque[-1]] < val:
                 deque.pop()
             deque.append(i)
 
             # TRICK: Make sure to calculate 'next' and 'next = i-limit'.
+            # TRICK: The while() loop condition is: while 'deque[0] < next'.
             next = i-limit
             while deque[0] < next:
                 deque.pop(0)
-
-            result[next] = nums[deque[0]]
-
-        return result
+            
+            res[next] = nums[deque[0]]
+    
+        return res
             
 foo = Solution();
 print(foo.maxSlidingWindow([1,3,-1,-3,5,3,6,7], 3));
