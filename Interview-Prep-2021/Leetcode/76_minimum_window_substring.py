@@ -50,6 +50,7 @@ class Solution(object):
 
         countT,window = {},{}
 
+        # TRICK: Make sure you get this syntax correct: the key here is 'c'!
         for c in t:
             countT[c] = 1+countT.get(c,0)
 
