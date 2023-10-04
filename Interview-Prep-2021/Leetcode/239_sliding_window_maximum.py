@@ -45,10 +45,11 @@ class Solution(object):
         
         n = len(nums)
         result = [0] * (n-k+1)
-
+        # TRICK: Make sure you define the deque and the limit, where the limit is
+        # 'limit = k-1'.
         deque = []
-
         limit = k-1
+
         for i in range (0, limit):
             val = nums[i]
             while not len(deque) == 0 and nums[deque[-1]] < val:
