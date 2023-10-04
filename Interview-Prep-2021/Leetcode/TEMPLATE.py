@@ -2,5 +2,5 @@
 
 # Always use two SPACES and not TABS
 
-foo = Solution();
-print(foo.XXX(YYY));
+foo = Solution()
+print(foo.XXX(YYY))
