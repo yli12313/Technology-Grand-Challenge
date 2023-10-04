@@ -48,14 +48,18 @@ class Solution(object):
         # TRICK: Make sure you define the deque and the limit, where the limit is
         # 'limit = k-1'.
         deque = []
+        #TRICK: You are doing k-1 because the deque is 0-based.
         limit = k-1
 
+        # TRICK: This for() loop sets up the first window.
         for i in range(0,limit):
             val = nums[i]
             while deque and nums[deque[-1]] < val:
                 deque.pop()
             deque.append(i)
-        
+
+        # TRICK: The for() loop processes and finds the max value in the first window
+        # and all subsequent sliding windows!
         for i in range(limit,n):
             val = nums[i]
             while deque and nums[deque[-1]] < val:
