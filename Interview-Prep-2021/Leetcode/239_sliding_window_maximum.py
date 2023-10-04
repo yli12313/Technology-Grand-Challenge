@@ -62,6 +62,7 @@ class Solution(object):
                 deque.pop()
             deque.append(i)
 
+            # TRICK: Make sure to calculate 'next' and 'next = i-limit'.
             next = i-limit
             while deque[0] < next:
                 deque.pop(0)
