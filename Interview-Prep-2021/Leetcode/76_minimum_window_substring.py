@@ -98,6 +98,8 @@ class Solution(object):
         # - Define variables have and need.
         # - define variables res, resLen.
         # - Define a left pointer.
+        # - Unpack l,r from res.
+        # - Return the answer with the correct ternary statement.
 
         # - Define a for() loop that goes up to len(s).
         # - Add new values to the window. 
