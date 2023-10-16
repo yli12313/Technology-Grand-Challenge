@@ -12,6 +12,9 @@ class Solution(object):
 
             temp_container.append(v)
             self.backtrack(container, temp_container, nums)
+            # TRICK: You have to pop the value from the end of temp_container in 
+            # order to let the backtracking in the form of recursive calls to 
+            # backtrack() find the other permutations!
             temp_container.pop()
             
     def permute(self, nums):
