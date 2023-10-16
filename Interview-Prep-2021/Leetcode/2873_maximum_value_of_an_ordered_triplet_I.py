@@ -15,6 +15,9 @@ class Solution(object):
         #   - The right indices for the for loops are: n-2,n-1,n.
         # - Calculate the result.
         # - Return the result.
+
+        # TC: O(N^3)
+        # SC: O(1)
         
         n = len(nums)
         res = 0
