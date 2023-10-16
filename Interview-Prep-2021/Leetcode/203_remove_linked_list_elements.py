@@ -16,6 +16,24 @@ class Solution(object):
         print()
 
     def removeElements(self, head, val):
+        # Constraints: 
+        # - The number of nodes in the list is in the range [0,10^4].
+        # - 1 <= Node.val <= 50
+        # - 0 <= val <= 50
+
+        Topic: Linked List
+        # This is a Linked List or Recursion problem.
+
+        # Approach 1:
+        # - Remove all the nodes at the front of the linked list that's equal to val.
+        # - Set a pointer cur to point at head.
+        # - Do a while loop when cur is not None and cur.next is not None.
+        # - If the next node has val, set cur.next to cur.next.next.
+        # - Else increment cur.
+
+        # TC: O(N)
+        # SC: O(1)
+
         while head is not None and head.val == val:
             head = head.next
 
