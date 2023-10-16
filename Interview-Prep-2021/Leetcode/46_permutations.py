@@ -1,50 +1,20 @@
+# LINK: https://leetcode.com/problems/permutations/
+
 class Solution(object):
-    def backtrack(self, container, temp_container, nums):
-        if len(temp_container) == len(nums):
-            container.append(temp_container[:])
-            return
-        
-        for i in range(len(nums)):
-            v = nums[i]
-
-            if v in temp_container:
-                continue
-
-            temp_container.append(v)
-            self.backtrack(container, temp_container, nums)
-            # TRICK: You have to pop the value from the end of temp_container in 
-            # order to let the backtracking in the form of recursive calls to 
-            # backtrack() find the other permutations!
-            temp_container.pop()
-            
     def permute(self, nums):
-        # Constraints:
+        # Constraints
         # - 1 <= nums.length <= 6
         # - -10 <= nums[i] <= 10
         # - All the integers of nums are unique.
 
         # Topic: Backtracking
+        # This is an Array or Backtracking problem.
 
         # Approach 1:
-        # Auxiliary backtrack() function:
-        # - Check to see if the length of the temporary container is equal
-        # to the length of nums.
-        # - If so, then  append the temporary container to the container. 
-        # - Do a for() loop from 0..len(nums) indexed by i.
-        # - If the current value indexed by i is in the temporary container,
-        # - then continue.
-        # - Add the corrent value indexed by i to the temporary container.
-        # - Call the backtrack() function recursively.
-        # - Pop a value from the temporary container to backtrack and explore 
-        # other permutations.
-
-        # Main permute() function:
-        # - Set up the skeleton.
-        # - Define a res list and return it.
-        # - Between the definition and the return statement, call backtrack.
-        #   - Parameter1: res variable
-        #   - Parameter2: empty list
-        #   - Parameter3: nums variable
+        # - Milestone #1: Set up the skeleton of the problem.
+        # - Define a result list res that will hold the answers.
+        # - Define and call the backtrack method with parameters: res, [], and nums.
+        # - Return res.
 
         # TC: O(N!); TC is determined by the number of permutations which is N!.
         # SC: O(N); SC is determined by the depth of the recursion stack which is
@@ -53,6 +23,30 @@ class Solution(object):
         res = []
         self.backtrack(res, [], nums)
         return res
+    
+    def backtrack(self,result,container,nums):
+        # - Milestone #2: Define an auxiliary method backtrack that will perform
+        # the backtracking.
+        # - Check that the length of the container is equal to the length of nums.
+        # - If so, append a copy of the container to the result.
+        # - Define a for() loop that goes from 0..len(nums).
+        # - Within the for() loop, check to see if the current value indexed by i is in the 
+        # container. If so, continue.
+        # - Append the value in nums indexed by i to the container.
+        # - Call the backtrack() method.
+        # - Pop() the rightmost element from the container so that the recursive calls to 
+        # backtrack() can find all the other permutation.
 
-foo = Solution()
-print(foo.permute([1,2,3]))
+        if len(container) == len(nums):
+            result.append(container[:])
+            return
+            
+        for i in range(len(nums)):
+            v = nums[i]
+
+            if v in container:
+                continue
+                
+            container.append(v)
+            self.backtrack(result,container,nums)
+            container.pop()
