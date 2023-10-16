@@ -34,12 +34,12 @@ class Solution(object):
         # TC: O(N)
         # SC: O(1)
 
-        while head is not None and head.val == val:
+        while head != None and head.val == val:
             head = head.next
 
         cur = head
 
-        while cur is not None and cur.next is not None:
+        while cur != None and cur.next != None:
             if cur.next.val == val:
                 cur.next = cur.next.next
             else:
