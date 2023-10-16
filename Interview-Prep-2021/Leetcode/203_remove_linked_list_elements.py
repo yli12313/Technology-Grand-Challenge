@@ -12,23 +12,23 @@ class Solution(object):
         while cur != None:
             print(cur.val, end="->")
             cur = cur.next
+        
+        print()
 
     def removeElements(self, head, val):
-        # Approach 1:
-
-        cur = head
-        
-        if head.val == val and head.next != None:
+        while head is not None and head.val == val:
             head = head.next
 
-        while cur != None and cur.next != None:
+        cur = head
+
+        while cur is not None and cur.next is not None:
             if cur.next.val == val:
                 cur.next = cur.next.next
             else:
                 cur = cur.next
         
-        self.printElements(head)
-        return head
+        # self.printElements(head)
+        return head    
 
 n1 = ListNode(1)
 n2 = ListNode(2)
@@ -47,4 +47,4 @@ n6.next = n7
 n7.next = None
 
 foo = Solution();
-print(foo.removeElements(n1,6));
+foo.removeElements(n1,6)
