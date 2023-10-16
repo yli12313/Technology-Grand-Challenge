@@ -21,7 +21,7 @@ class Solution(object):
         # - 1 <= Node.val <= 50
         # - 0 <= val <= 50
 
-        Topic: Linked List
+        # Topic: Linked List
         # This is a Linked List or Recursion problem.
 
         # Approach 1:
