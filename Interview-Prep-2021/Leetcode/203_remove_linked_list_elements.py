@@ -34,15 +34,18 @@ class Solution(object):
         # TC: O(N)
         # SC: O(1)
 
+        # TRICK: Make sure to use '==' when doing a check for equality!
         while head != None and head.val == val:
             head = head.next
 
         cur = head
 
         while cur != None and cur.next != None:
+            # TRICK: Make sure to use '==' when doing a check for equality!
             if cur.next.val == val:
                 cur.next = cur.next.next
             else:
+                # TRICK: To increment the pointer, you have to do 'cur = cur.next'.
                 cur = cur.next
         
         # self.printElements(head)
