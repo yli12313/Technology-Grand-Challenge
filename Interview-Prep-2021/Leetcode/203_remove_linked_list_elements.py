@@ -31,6 +31,15 @@ class Solution(object):
         # - If the next node has val, set cur.next to cur.next.next.
         # - Else increment cur.
 
+        # Approach 1 (YouTube):
+        # - Treat the case where the node at the head of the list has Node.val == val. 
+        #   - Keep in mind that multiple nodes can start at the beginning of the linked 
+        # list where the condition is true.
+        # - Define a while loop that will loop through the linked list.
+        # - Define condition that will check if the next node has Node.val == val.
+        #   - If the condition is true, then delete the next node.
+        #   - Else increase the cursor.
+
         # TC: O(N)
         # SC: O(1)
 
