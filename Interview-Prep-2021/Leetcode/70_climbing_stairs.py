@@ -41,6 +41,9 @@ class Solution(object):
         # - Update the results array.
         # - Return the right most value in the results array.
 
+        # TC: O(N)
+        # SC: O(1)
+
         res = [0]*n
         if n == 1:
             res[0] = 1
