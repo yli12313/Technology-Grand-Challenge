@@ -10,7 +10,7 @@ class Solution(object):
 
         # Approach 1 (dynamic programming):
         # - Define a results array that will host the answer.
-        # - Treat the n == 1 case ans n >= 2 case.
+        # - Treat the n == 1 case and n >= 2 case.
         # - Loop from 2..n.
         # - Update the results array.
         # - Return the right most element in the results array.
