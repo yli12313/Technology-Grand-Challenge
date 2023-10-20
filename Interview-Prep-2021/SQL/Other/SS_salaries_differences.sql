@@ -2,7 +2,7 @@
 -- TRICKS:
 -- 1) Make sure you have the correct id for the department table 'department_id'.
 -- 2) Make sure you have insightful names for each table!
--- 3) Make sure that you actually select 'MAX(salary)' from each of the subqueries!
+-- 3) Make sure that you actually select 'MAX(salary)' in each of the two subqueries!
 
 SELECT ABS(
 (SELECT MAX(salary) 
