@@ -32,7 +32,7 @@ class Solution(object):
         return res[n-1]
         """
 
-        # Approach 2: (iterative):
+        # Approach 2 (iterative):
         # - Treat the n == 1 case.
         # - Define first and second and set them to 1,2.
         # - Loop from 3..n+1.
