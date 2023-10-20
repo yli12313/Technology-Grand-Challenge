@@ -19,7 +19,7 @@ class Solution(object):
         # Approach 1 (YouTube):
         # - This is a triple for loop problem (Setup the skeleton first).
         # - The first for loop goes from 0..n-2.
-        # - The second for loop goes from i+1..len(n-1).
+        # - The second for loop goes from i+1..n-1.
         # - The thrid for loop goes from i+2..n.
 
         # TC: O(N^3)
