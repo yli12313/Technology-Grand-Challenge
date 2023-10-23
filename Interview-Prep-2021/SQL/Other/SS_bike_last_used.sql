@@ -4,7 +4,7 @@
 -- Have to read the questions more carefully! 
 -- You have to group by the 'bike_number'!
 -- Because you have done a group by operation, you have to then select the 'MAX(end_time)'!
--- Yes, when you do the order by operation, you have to add 'DESC' to have the most recently used at the top!
+-- Yes when you do the order by operation, you have to add 'DESC' to have the most recently used bike at the top of the table!
 
 select
 bike_number,
