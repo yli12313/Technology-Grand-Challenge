@@ -8,6 +8,7 @@
 class RandomizedSet(object):
     def __init__(self):
         self.ind = {}
+        # TRICK: The 'self.values' has to be a list.
         self.values = []
         
     def insert(self, val):
