@@ -10,7 +10,6 @@ class RandomizedSet(object):
         self.ind = {}
         self.values = []
         
-
     def insert(self, val):
         if val in self.ind:
             return False
@@ -22,6 +21,12 @@ class RandomizedSet(object):
     def remove(self, val):
         if val not in self.ind:
             return False
+
+        # TRICK: With remove(), we have a four step process:
+        # 1) Get the index of val (i).
+        # 2) Set the index of the last value in the array to i.
+        # 3) Set the ith value in the array to the last value.
+        # 4) Pop val from the indices; pop the last value from the array.
         
         i = self.ind[val]
         self.ind[self.values[-1]] = i
@@ -32,6 +37,7 @@ class RandomizedSet(object):
         return True
 
     def getRandom(self):
+        # TRICK: The trick here is 'random.choice(self.values)'.
         return random.choice(self.values)
         
 # Your RandomizedSet object will be instantiated and called as such:
