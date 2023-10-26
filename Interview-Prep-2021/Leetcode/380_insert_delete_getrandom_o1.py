@@ -4,6 +4,7 @@
 # This is an Array, Hash Table, Math, Design, or Randomized problem.
 
 # TC: O(1)
+# SC: O(N)
 
 class RandomizedSet(object):
     def __init__(self):
