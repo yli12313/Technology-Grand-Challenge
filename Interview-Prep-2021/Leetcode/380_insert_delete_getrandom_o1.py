@@ -1,7 +1,11 @@
 # LINK: https://leetcode.com/problems/insert-delete-getrandom-o1/
 
-class RandomizedSet(object):
+# Topic: Array
+# This is an Array, Hash Table, Math, Design, or Randomized problem.
 
+# TC: O(1)
+
+class RandomizedSet(object):
     def __init__(self):
         self.ind = {}
         self.values = []
