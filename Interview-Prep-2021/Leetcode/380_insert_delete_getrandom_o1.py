@@ -43,7 +43,7 @@ class RandomizedSet(object):
         # Approach 1:
         # - If val is not in self.ind, then return False.
         # - Get the index i for val.
-        # - Set the index of the last entry in val to have index i.
+        # - Set the index of the last entry in values to have index i.
         # - Set the value of the entry in the list at index i to be the last entry.
         # - Delete the entry for val in the indices dictionary; delete the last value from the list.
 
