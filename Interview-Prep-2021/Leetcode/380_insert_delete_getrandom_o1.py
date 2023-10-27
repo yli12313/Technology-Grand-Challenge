@@ -30,11 +30,13 @@ class RandomizedSet(object):
         # - Append val to values.
         # - Update self.ind for val such that it's index is the value, where val is the key!
 
+        # TRICK: The correct test here is 'in'.
         if val in self.ind:
             return False
         
         self.values.append(val)
         self.ind[val] = len(self.values)-1
+        # TRICK: Have to return true here.
         return True
         
     def remove(self, val):
@@ -45,6 +47,7 @@ class RandomizedSet(object):
         # - Set the value of the entry in the list at index i to be the last entry.
         # - Delete the entry for val in the indices dictionary; delete the last value from the list.
 
+        # TRICK: The correct test here is 'not in'.
         if val not in self.ind:
             return False
         
