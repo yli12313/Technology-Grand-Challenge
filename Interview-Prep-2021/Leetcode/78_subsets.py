@@ -11,7 +11,9 @@ class Solution(object):
         def backtrack(start):
             res.append(cur[:])
 
+            # TRICK: The loop goes from start..len(nums).
             for i in range(start, len(nums)):
+                # TRICK: Check the following -> 'if nums[i] not in cur:'.
                 if nums[i] not in cur:
                     cur.append(nums[i])
                     backtrack(i+1)
