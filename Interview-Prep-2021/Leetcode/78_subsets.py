@@ -12,13 +12,13 @@ class Solution(object):
         # This is an Array, Backtracking, or Bit Manipulation problem.
 
         # Approach 1:
-        # - Define a 'res' list that will hold all the subsets; define a 'cur' list that will hold the current subset.
-        # - We will be utilizing a inner function has a helper (backtrack).
-        # - The backtracking starts with index 0.
-        # - Inside the backtrack function:
-        #   - Append the a copy of cur to res (base case).
-        #   - Loop from start..len(nums).
-        #   - If nums[i] is not in the cur list, then append it.
+        # - Define a 'res' and 'cur' list that will hold the results and the current subset being processed.
+        # Return res as part of the code skeleton.
+        # - We are going to utilize a helper function 'backtrack'. We call this function starting with index 0.
+        # - Inside the backtrack() function:
+        #   - Append the a copy of cur to res.
+        #   - Loop from start..len(nums), with index i.
+        #   - If the current value with index i is not in cur, then append it.
         #   - Call backtrack with i+1.
         #   - Call the pop() function to remove the last value in this path, so that you can use backtracking to explore 
         #   other paths that may result in a valid subset.
