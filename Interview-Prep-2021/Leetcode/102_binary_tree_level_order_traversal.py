@@ -12,6 +12,7 @@ class Solution(object):
     def levelOrder(self, root):
         res = []
 
+        # TRICK: Have to check the 'not root' case.
         if not root:
             return res
 
