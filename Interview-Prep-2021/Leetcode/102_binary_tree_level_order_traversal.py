@@ -16,6 +16,7 @@ class Solution(object):
         if not root:
             return res
 
+        # TRICK: You append 'root' to queue, which is a list.
         queue = []
         queue.append(root)
 
