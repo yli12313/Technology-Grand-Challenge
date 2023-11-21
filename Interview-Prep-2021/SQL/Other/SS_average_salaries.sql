@@ -1,6 +1,6 @@
 -- LINK: https://platform.stratascratch.com/coding/9917-average-salaries?code_type=3
 
--- TRICK: 
+-- TRICKS: 
 -- No notes to record with this one; good problem!
 -- Make sure to have good variable names and be confidence with the variable names that you choose!
 
