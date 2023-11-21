@@ -1,6 +1,6 @@
 -- LINK: https://platform.stratascratch.com/coding/10166-reviews-of-hotel-arena?code_type=3
 
--- TRICKS:
+-- TRICK:
 -- SQL is not hard at all; you just need to consistently practice everyday!
 
 SELECT 
