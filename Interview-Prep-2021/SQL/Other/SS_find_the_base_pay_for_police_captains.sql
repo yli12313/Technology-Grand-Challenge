@@ -1,4 +1,4 @@
--- https://platform.stratascratch.com/coding/9972-find-the-base-pay-for-police-captains/solutions?code_type=3
+-- LINK: https://platform.stratascratch.com/coding/9972-find-the-base-pay-for-police-captains/solutions?code_type=3
 
 -- TRICKS:
 -- This is the first time I've used 'like'.
