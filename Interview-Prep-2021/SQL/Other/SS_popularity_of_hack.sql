@@ -1,6 +1,6 @@
 -- LINK: https://platform.stratascratch.com/coding/10061-popularity-of-hack?code_type=3
 
--- TRICKS:
+-- TRICK:
 -- This was not a hard problem; just have to read the problem!
 
 SELECT
