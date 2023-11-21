@@ -1,6 +1,6 @@
 -- LINK: https://platform.stratascratch.com/coding/9891-customer-details?code_type=3
 
--- TRICKS:
+-- TRICK:
 -- Have to just keep practicing the syntax for joins! It's <JOIN> [TABLE] <ON> [CONDITION].
 
 -- Version 1:
