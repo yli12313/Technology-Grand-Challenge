@@ -8,8 +8,7 @@
 select 
     product_id,
     sum(cost_in_dollars*units_sold) as total_revenue
-from 
-online_orders
+from online_orders
 where month(date) between 1 and 6
 group by product_id
 order by total_revenue desc
