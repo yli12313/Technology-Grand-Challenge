@@ -1,6 +1,6 @@
 -- LINK: https://platform.stratascratch.com/coding/9992-find-artists-that-have-been-on-spotify-the-most-number-of-times?code_type=3
 
--- TRICKS:
+-- TRICK:
 -- Good problem; not much of an issue with this one!
 
 select 
