@@ -10,7 +10,7 @@ class Solution(object):
         # Topic: Array.
         # This is a String, Simulation problem.
 
-         Approach 1:
+        # Approach 1:
         # - Loop through the characters of the string s.
         # - For each character c in s, if it's not equal to the character 'i', then add it to a return
         # string.
