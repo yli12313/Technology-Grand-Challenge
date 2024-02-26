@@ -30,7 +30,8 @@ class Solution(object):
 
         if len(nums) < 3:
             return None
-        
+
+        # TRICK: Don't forget to sort 'nums'!
         nums = sorted(nums)
         result = nums[0]+nums[1]+nums[2]
 
@@ -39,14 +40,18 @@ class Solution(object):
             r = len(nums)-1
 
             while l < r:
+                # TRICK: Calculating 'temp' has to go inside the while() loop!
                 temp = nums[i]+nums[l]+nums[r]
 
+                # TRICK: Returning 'temp' here.
                 if temp == target:
                     return temp
 
+                # TRICK: Updating 'result' here such that it's equal to 'temp'!
                 if abs(temp-target) < abs(result-target):
                     result = temp
-                
+
+                # TRICK: Updating 'l' and 'r' here!
                 if temp < target:
                     l += 1
                 else:
