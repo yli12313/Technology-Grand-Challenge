@@ -31,8 +31,8 @@ class Solution(object):
         if len(nums) < 3:
             return None
 
-        # TRICK: Don't forget to sort 'nums'!
-        nums = sorted(nums)
+        # TRICK: Don't forget to sort 'nums'! 'nums.sort()' is better syntax than 'nums = sorted(nums)'.
+        nums.sort()
         result = nums[0]+nums[1]+nums[2]
 
         for i in range(len(nums)-2):
