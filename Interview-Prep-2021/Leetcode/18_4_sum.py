@@ -42,6 +42,8 @@ class Solution(object):
         # solve 2-sum in an if() statement.
         if N == 2:
             l, r = 0, len(nums)-1
+
+            # TRICK: Define the while() loop after you define 'l' and 'r'.
             while l < r:
                 # Case 1: Left and right hit target.
                 if nums[l] + nums[r] == target:
