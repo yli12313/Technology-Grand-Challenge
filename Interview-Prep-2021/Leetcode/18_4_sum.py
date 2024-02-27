@@ -17,8 +17,11 @@ class Solution(object):
         # SC: O(N), because the space required for the recursion stack in the worst case is N.
         # Another way of saying it is that: 'the depth of the recursion is at most n'.
 
+        # Make sure to sort the 'nums' list first!
         nums.sort()
+
         results = []
+        
         # Calling an auxiliary function where you are passing in:
         #   - 'nums' list
         #   - 'target' to hit
@@ -26,6 +29,7 @@ class Solution(object):
         #   - Empty list '[]' to hold a result
         #   - 'results' list that holds all the answers
         self.findNsum(nums, target, 4, [], results)
+        
         return results
 
     def findNsum(self, nums, target, N, result, results):
