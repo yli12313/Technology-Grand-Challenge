@@ -54,7 +54,8 @@ class Solution(object):
                     #   3) Update left pointer again if the same value is encountered.
                     results.append(result + [nums[l], nums[r]])
                     l += 1
-                    while l < r and nums[l] == nums[l - 1]:
+                    # TRICK: The first part of the condition is 'while l<r'.
+                    while l<r and nums[l] == nums[l - 1]:
                         l += 1
 
                 # Case 2: Left and right is less than target.
