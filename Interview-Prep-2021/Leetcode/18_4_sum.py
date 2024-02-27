@@ -32,6 +32,7 @@ class Solution(object):
         
         return results
 
+    # TRICK: Have to pass the number of elements to consider for sum 'N' into this function!
     def findNsum(self, nums, target, N, result, results):
         # If length of 'nums' is less than N (number of elements to consider for sum), return.
         # If N is less than 2, return.
