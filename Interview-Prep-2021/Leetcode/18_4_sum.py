@@ -75,6 +75,7 @@ class Solution(object):
                 if target < nums[i]*N or target > nums[-1]*N:
                     break
                 # TRICK: Use this line to avoid duplicates.
+                # The line is: 'i == 0 or i > 0 and nums[i-1] != nums[i]'.
                 if i == 0 or i > 0 and nums[i-1] != nums[i]:
                     # Call the recursive function with the current number; operations performed:
                     #   1) Update nums array to the next value.
