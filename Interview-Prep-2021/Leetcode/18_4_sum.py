@@ -15,7 +15,7 @@ class Solution(object):
 
         # TC: O(N^3), because there's three nested loops (implemented through recursion).
         # SC: O(N), because the space required for the recursion stack in the worst case is N.
-        # Another way of saying it is that: 'the depth of the recursion is at most n'.
+        # Another way of saying it is that: 'the depth of the recursion is at most N'.
 
         # Make sure to sort the 'nums' list first!
         nums.sort()
