@@ -13,8 +13,9 @@ class Solution(object):
         # Approach 1 (Copilot):
         # - Just see the comments.
 
-        # TC: O(N^3)
-        # SC: O(N)
+        # TC: O(N^3), because there's three nested loops (implemented through recursion).
+        # SC: O(N), because the space required for the recursion stack in the worst case is N.
+        # Another way of saying it is that: 'the depth of the recursion is at most n'.
 
         nums.sort()
         results = []
