@@ -68,6 +68,7 @@ class Solution(object):
         else:
             # TRICK: We need to find N numbers that add up to the target. 
             # So we only need to consider up to the 'len(nums)-N+1'th element.
+            # Remember, the for() loop is the first thing right after else!
             for i in range(len(nums)-N+1):
                 # TRICK: If target is less than the smallest possible sum (current number times N),
                 # or greater than the largest possible sum (which is the last number times N),
