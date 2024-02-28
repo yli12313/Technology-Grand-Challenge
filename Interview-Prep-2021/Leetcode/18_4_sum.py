@@ -19,7 +19,6 @@ class Solution(object):
 
         # Make sure to sort the 'nums' list first!
         nums.sort()
-
         results = []
         
         # Calling an auxiliary function where you are passing in:
@@ -34,9 +33,11 @@ class Solution(object):
 
     # TRICK: Have to pass the number of elements to consider for sum 'N' into this function!
     def findNsum(self, nums, target, N, result, results):
+        n = len(nums)
+        
         # If length of 'nums' is less than N (number of elements to consider for sum), return.
         # If N is less than 2, return.
-        if len(nums) < N or N < 2: 
+        if n < N or N < 2: 
             return None
 
         # solve 2-sum in an if() statement.
@@ -45,8 +46,10 @@ class Solution(object):
 
             # TRICK: Define the while() loop after you define 'l' and 'r'.
             while l < r:
+                temp = nums[l] + nums[r]
+                
                 # Case 1: Left and right hit target.
-                if nums[l] + nums[r] == target:
+                if temp == target:
                     
                     # Operations performed:
                     #   1) Update results.
@@ -55,11 +58,11 @@ class Solution(object):
                     results.append(result + [nums[l], nums[r]])
                     l += 1
                     # TRICK: The first part of the condition is 'while l<r'.
-                    while l<r and nums[l] == nums[l - 1]:
+                    while l<r and nums[l-1] == nums[l]:
                         l += 1
 
                 # Case 2: Left and right is less than target.
-                elif nums[l] + nums[r] < target:
+                elif temp < target:
                     l += 1
 
                 # Case 3: Left and right is greater than target.
@@ -69,7 +72,7 @@ class Solution(object):
             # TRICK: We need to find N numbers that add up to the target. 
             # So we only need to consider up to the 'len(nums)-N+1'th element.
             # Remember, the for() loop is the first thing right after else!
-            for i in range(len(nums)-N+1):
+            for i in range(n-N+1):
                 # TRICK: If target is less than the smallest possible sum (current number times N),
                 # or greater than the largest possible sum (which is the last number times N),
                 # you can break early because you can't find N numbers that sum to target.
