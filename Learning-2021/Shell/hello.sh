@@ -86,7 +86,7 @@
 # == - is equal to - if [ "$a" == "$b" ]
 # != - is not equal to - if [ "$a" != "$b" ]
 # < - is less than, in ASCII alphabetical order - if [[ "$a" < "$b" ]]
-# > - is greater than, in ASCII alphabetical order - if [[ "$a" < "$b" ]]
+# > - is greater than, in ASCII alphabetical order - if [[ "$a" > "$b" ]]
 # -z - string is null that is, has zero length - if [ -z "$String" ]
 # -n - string is not null - if [ -n "$String" ]
 
