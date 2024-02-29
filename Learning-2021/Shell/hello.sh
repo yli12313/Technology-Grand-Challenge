@@ -94,10 +94,10 @@
 # ------------------------------------
 # -eq compare if two numbers are equal
 # -ge compare if one number is greater than or equal to a number
-# -le  compare if one number is less than or equal to a number
-# -ne  compare if two numbers are not equal
-# -gt  compare if one number is greater than another number
-# -lt  compare if one number is less than another number
+# -le compare if one number is less than or equal to a number
+# -ne compare if two numbers are not equal
+# -gt compare if one number is greater than another number
+# -lt compare if one number is less than another number
 
 # Examples:
 # [ n1 -eq n2 ]  (true if n1 same as n2, else false) (==)
