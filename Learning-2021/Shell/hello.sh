@@ -101,7 +101,7 @@
 
 # Examples:
 # [ n1 -eq n2 ]  (true if n1 same as n2, else false) (==)
-# [ n1 -ge n2 ]  (true if n1greater then or equal to n2, else false) (>=)
+# [ n1 -ge n2 ]  (true if n1 greater then or equal to n2, else false) (>=)
 # [ n1 -le n2 ]  (true if n1 less then or equal to n2, else false) (<=)
 # [ n1 -ne n2 ]  (true if n1 is not same as n2, else false) (!=)
 # [ n1 -gt n2 ]  (true if n1 greater then n2, else false) (>)
