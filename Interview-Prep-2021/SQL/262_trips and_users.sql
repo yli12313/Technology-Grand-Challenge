@@ -1,5 +1,7 @@
 # LINK: https://leetcode.com/problems/trips-and-users/
 
+# NOTE: Keep going and keep practicing!
+    
 select
     request_at as Day,
     round(
