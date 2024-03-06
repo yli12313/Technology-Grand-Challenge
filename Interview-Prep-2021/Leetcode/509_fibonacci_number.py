@@ -18,6 +18,9 @@ class Solution(object):
         # - But in the end, you return the value at 'dp[n-1]'. 
         # - Keep going and keep practicing!
 
+        # TC: O(N)
+        # SC: O(N)
+
         if n < 0:
             return None
         
@@ -30,7 +33,7 @@ class Solution(object):
         dp = [0]*n
         dp[0] = 1
         dp[1] = 1
-
+        
         for i in range(2, n):
             dp[i] = dp[i-1]+dp[i-2]
         
