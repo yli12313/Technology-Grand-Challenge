@@ -11,7 +11,6 @@ from collections import *
 from sys import *
 from os import *
 
-## Read input as specified in the question.
 def fibonacci(n):
     if n < 1:
         return None
