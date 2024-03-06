@@ -1,5 +1,8 @@
 # LINK: https://www.codingninjas.com/studio/problems/nth-fibonacci-number_74156?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=PROBLEM
 
+# TC: O(N)
+# SC: O(N)
+
 from math import *
 from collections import *
 from sys import *
