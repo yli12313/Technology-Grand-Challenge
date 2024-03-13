@@ -24,7 +24,8 @@ def getSecondOrderElements(n: int,  a: [int]) -> [int]:
 
     if n < 2:
         return None
-    
+
+    # TRICK: This is how you set multiple variables to have the same value.
     largest = sec_largest = smallest = sec_smallest = 0
     
     if a[0] > a[1]:
@@ -43,7 +44,9 @@ def getSecondOrderElements(n: int,  a: [int]) -> [int]:
             largest = cur
         elif cur > sec_largest:
             sec_largest = cur
-    
+
+    # TRICK: When you have two for() loops, you can use the same variable to interate
+    # over them!
     for i in range(2,n):
         cur = a[i]
 
