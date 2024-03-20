@@ -9,16 +9,29 @@
 
 from typing import List
 
-def recursive(container, n):
-    if n <= 0:
-        return
+# Approach 1 (With two functions):
+# def recursive(container, n):
+#     if n <= 0:
+#         return
     
-    recursive(container,n-1)
-    container.append(n)
+#     recursive(container,n-1)
+#     container.append(n)
 
-def printNos(x: int) -> List[int]: 
-    answer = []
+# def printNos(x: int) -> List[int]: 
+#     answer = []
 
-    recursive(answer, x)
+#     recursive(answer, x)
 
-    return answer
+#     return answer
+
+# Approach 2 (With one function):
+def printNos(x: int, result = None) -> List[int]: 
+    if result is None:
+        result = []
+
+    if x == 0:
+        result.reverse()
+        return result
+    
+    result.append(x)
+    return printNos(x-1, result)
