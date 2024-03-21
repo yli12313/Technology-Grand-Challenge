@@ -23,6 +23,9 @@ class Solution(object):
         # counts all combinations that include the current coin. 
         # - Return 'dp[amount]'.
 
+        # TC: O(N*M), where N is the amount and M is the number of different coins.
+        # SC: O(N), where N is the amount.
+
         dp = [0]*(amount+1)
         dp[0] = 1
 
