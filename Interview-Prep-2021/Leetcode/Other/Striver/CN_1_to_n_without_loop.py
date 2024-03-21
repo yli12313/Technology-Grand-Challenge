@@ -34,4 +34,6 @@ def printNos(x: int, result = None) -> List[int]:
         return result
     
     result.append(x)
+    # TRICK: Don't forget to pass 'result' into the function when doing
+    # the recursive step!
     return printNos(x-1, result)
